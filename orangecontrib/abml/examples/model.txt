@@ -1,0 +1,27 @@
+Logistic regression model
+                  (note: coeficients are learned from normalized values of attributes)Attack=no	Attack=yes	Attribute
+-0.804(-1.34,-0.271)	0.804(0.271,1.34)	attacking_pieces
+0.0104(-0.139,0.16)	-0.0104(-0.16,0.139)	pieces_on_king_side
+-0.774(-1.5,-0.0491)	0.774(0.0491,1.5)	close_combat_pieces
+-2.46(-3.29,-1.63)	2.46(1.63,3.29)	pawn_attack
+0.5(0.106,0.895)	-0.5(-0.895,-0.106)	pawn_defense
+0.117(-1.31,1.55)	-0.117(-1.55,1.31)	defensive_pawn_structure=g7
+-0.498(-2.1,1.11)	0.498(-1.11,2.1)	defensive_pawn_structure=nog7
+0.112(-1.29,1.51)	-0.112(-1.51,1.29)	defensive_pawn_structure=nog7_bishop
+-0.43(-1.83,0.969)	0.43(-0.969,1.83)	blocked_center=yes
+0.166(-1.15,1.49)	-0.166(-1.49,1.15)	blocked_center=no
+-0.977(-2.53,0.58)	0.977(-0.58,2.53)	open_file=yes
+0.709(-0.826,2.24)	-0.709(-2.24,0.826)	open_file=no
+-0.0281(-1.93,1.88)	0.0281(-1.88,1.93)	strong_open_file=yes
+-0.225(-1.97,1.52)	0.225(-1.52,1.97)	strong_open_file=no
+-0.176(-1.62,1.26)	0.176(-1.26,1.62)	queen_bishop_diagonal=yes
+-0.0772(-1.47,1.31)	0.0772(-1.31,1.47)	queen_bishop_diagonal=no
+0.511(-0.853,1.87)	-0.511(-1.87,0.853)	castling_type=same
+-0.338(-1.86,1.18)	0.338(-1.18,1.86)	castling_type=different
+-0.42(-1.77,0.928)	0.42(-0.928,1.77)	castling_type=no
+-0.148(-0.367,0.0705)	0.148(-0.0705,0.367)	bishops
+-1.06(-2.06,-0.0531)	1.06(0.0531,2.06)	IF pawn_attack>=1.0 AND pawn_defense>=3.0 THEN Attack=yes 
+-0.19(-1.37,0.988)	0.19(-0.988,1.37)	IF close_combat_pieces>=1.0 AND pawn_defense<=2.0 AND attacking_pieces>=2.0 THEN Attack=yes 
+-1.07(-2.31,0.178)	1.07(-0.178,2.31)	IF attacking_pieces>=2.0 AND pawn_defense<=3.0 THEN Attack=yes 
+-0.116(-1.39,1.16)	0.116(-1.16,1.39)	IF attacking_pieces>=2.0 THEN Attack=yes 
+-0.485(-1.75,0.776)	0.485(-0.776,1.75)	intercept(2)

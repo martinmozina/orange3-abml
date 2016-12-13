@@ -1,0 +1,292 @@
+attacking_pieces	pieces_on_king_side	close_combat_pieces	pawn_attack	pawn_defense	defensive_pawn_structure	blocked_center	open_file	strong_open_file	queen_bishop_diagonal	castling_type	bishops	Attack	FEN	Result	Black	White	Event
+continuous	continuous	continuous	continuous	continuous	g7 nog7 nog7_bishop	yes no	yes no	yes no	yes no	same different no	continuous	no yes	string	string	string	string	string
+												class	meta	meta	meta	meta	meta
+4.000	3.000	2.000	0.000	3.000	g7	no	no	no	no	same	1.000	yes	rq3rk1/p3Rppp/1pb2n2/2pp1N2/3P4/2PB1Q2/PP3PP1/2R4K b - - 0 1	1-0	Forintos, Gy	Radulov, I.	Wijk aan Zee 17/235
+3.000	4.000	1.000	0.000	2.000	g7	no	yes	no	no	no	2.000	yes	r1bq1rk1/pp1pb1pp/2n1pn2/6B1/7Q/2PB1N2/PP3PPP/RN2K2R b KQ - 0 1	1/2-1/2	Taimanov, M.	Padevsky, N.	Vrnjacka Banja 17/345
+4.000	4.000	1.000	0.000	2.000	nog7_bishop	no	no	no	no	same	1.000	yes	r2q1r2/p3ppk1/3pPbp1/2p3B1/7N/3Q4/P1P3PP/5RK1 b - - 0 1	1-0	Poutiainen, P.	Borngaesser, R.	Teesside 18/176
+1.000	1.000	0.000	2.000	3.000	nog7	no	no	no	no	different	0.000	yes	3r1rk1/pp2ppbp/2p3p1/q3P3/2bP2PP/2NNQ3/PPP5/1K1R2R1 b - - 0 1	1-0	Chebanenko, V.	Spassky, B.	USSR 18/178
+0.000	2.000	0.000	1.000	3.000	g7	yes	no	no	no	same	2.000	yes	1r1r2k1/2qpbppp/2p1p3/3nPP2/3B4/3B4/P1P3PP/R2Q1RK1 b - - 0 1	0-1	Kirov, N.	Tal, M.	Novi Sad 18/371
+1.000	3.000	0.000	2.000	3.000	nog7_bishop	no	yes	no	no	same	2.000	yes	r1br2k1/2q1bp1p/ppnpp1p1/2n3P1/P3PP1Q/1NNBBR2/1PP4P/R5K1 b - - 0 1	0-1	Deze, A.	Minic, D.	Sombor 18/379
+2.000	2.000	0.000	1.000	3.000	g7	no	no	no	yes	different	1.000	yes	r4rk1/1b1nbpp1/p3p1p1/q2p3P/1p1NP3/4BP2/PPPQ4/1K1R1B1R b - - 0 1	1-0	Deze, A.	Tal, M.	Novi Sad 18/400
+1.000	2.000	0.000	3.000	3.000	g7	no	no	no	no	different	1.000	yes	1rb2rk1/1q3ppp/p2P4/n2p1PPP/1p1B4/8/PPP2Q2/2KR3R b - - 0 1	1/2-1/2	Malich, B.	Tal, M.	Halle 18/445
+2.000	3.000	0.000	1.000	3.000	nog7_bishop	no	yes	no	no	same	2.000	yes	3r1rk1/1q2bp1p/p1bppnp1/1p3P2/3BP3/P1NB3Q/1PP3PP/4RR1K b - - 0 1	1-0	Larsen, B.	Hartston, W.	Las Palmas 18/471
+1.000	3.000	1.000	0.000	3.000	nog7	no	yes	no	no	same	1.000	yes	2r2r2/pb1q1pkp/1p2p1p1/n5Q1/3pP3/2PB2N1/P4PPP/3RR1K1 b - - 0 1	1-0	Garcia, S.	Tarjan, J.	Wijk aan Zee 18/609
+3.000	3.000	1.000	1.000	3.000	nog7	no	no	no	no	same	1.000	yes	r3qrk1/1bp2pbp/1p3np1/pP3PN1/P1B1p3/1QP1P3/3N2PP/3R1RK1 b - - 0 1	0-1	Vukic, M.	Damjanovic, M.	Vukovar 21/79
+3.000	2.000	1.000	0.000	3.000	g7	no	no	no	no	same	1.000	yes	rq3rk1/3nbppp/4p3/3b1N2/Np6/1P2Q1P1/PB3P1P/R2R2K1 b - - 0 1	1-0	Joksic, S.	Gliksman, Dar	Jugoslavija (ch) 22/79
+4.000	5.000	0.000	0.000	3.000	g7	no	yes	no	no	same	1.000	yes	1rbq1bk1/ppr3pp/3p1p2/2pP4/P1B2Q1B/6RP/1PP3P1/5RK1 b - - 0 1	1-0	Fraguela Gil, J.	Bellon Lopez, J.	Montilla 22/105
+0.000	3.000	0.000	2.000	1.000	nog7_bishop	no	no	no	no	same	1.000	yes	r1bqrbk1/pp5n/2p1n1p1/3pPPPp/P7/2N1B3/1PP1N1B1/R2Q1RK1 b - - 0 1	1-0	Tseshkovsky, V.	Sveshnikov, E.	Sochi 22/178
+2.000	2.000	1.000	1.000	1.000	nog7_bishop	yes	yes	no	no	no	2.000	yes	r2qr1k1/ppp2pb1/1n2p3/3pP1PQ/3P4/2PB4/PP2K2P/n1B4R b - - 0 1	1-0	Vadasz, L.	Mednis, E.	Budapest 22/200
+3.000	4.000	2.000	1.000	3.000	g7	yes	yes	no	no	same	0.000	yes	4r1k1/p1r1qppp/1p2p1n1/3pP1NN/1PnP2QP/P2R2P1/5P2/4R1K1 b - - 0 1	1-0	Diez del Corral, J.	Stean, M.	Montilla 22/234
+2.000	2.000	1.000	1.000	3.000	nog7	no	yes	no	no	same	1.000	yes	r1q2rk1/1p2pp1p/3p2p1/1N3PQn/1Pn1P3/1B3P2/7P/1R1R3K b - - 0 1	0-1	Marangunic, S.	Ljubojevic, Lj	Jugoslavija (ch) 23/190
+2.000	2.000	1.000	3.000	3.000	g7	yes	no	no	no	different	1.000	yes	2r2r1k/pp2bpp1/1q2p2p/1b1pP1N1/3P1PPP/8/PPBQ4/1K1R3R b - - 0 1	1-0	Panbukchian, V.	Timoscenko, G.	Varna 23/213
+3.000	3.000	0.000	1.000	2.000	g7	yes	yes	yes	no	same	2.000	yes	2r4k/1p2brpp/p3p3/1b1pP2q/3B1PR1/2P5/PPBQ3P/6RK b - - 0 1	1-0	Hecht, H.-J.	Ermenkov, E.	Moscow 23/215
+2.000	4.000	0.000	1.000	3.000	g7	yes	yes	no	no	same	1.000	yes	r4rk1/1q1bbppp/p2pp3/1p1nPP2/8/P1NPBNQ1/1P4PP/R4RK1 b - - 0 1	0-1	Malich, B.	Grottke, H.-J.	DDR 23/482
+1.000	2.000	0.000	3.000	2.000	nog7	no	no	no	no	same	0.000	yes	3r1r2/p2qpp1k/1pnp2p1/3N1P1p/2P1Q1PP/1P6/P3P3/R4RK1 b - - 0 1	1-0	Tustonic	Plachetka, J.	Vinkovci 23/632
+2.000	4.000	0.000	2.000	3.000	nog7_bishop	yes	no	no	yes	same	1.000	yes	2r2r2/p2bnpbk/1q2p1pp/n2pP3/1p1P1BPP/1P3N2/P2QNPB1/2R1R1K1 b - - 0 1	1-0	Small, V.	Bordonada, G.	New Zealand 24/6
+3.000	3.000	1.000	2.000	3.000	g7	no	no	no	yes	no	2.000	yes	rn1qnrk1/pb2bppp/1p1pp3/6B1/3P2PP/2PB1N2/PPQN1P2/R3K2R b KQ - 0 1	1-0	Minic, D.	Kovacevic, Vlat	Karlovac 24/104
+1.000	3.000	0.000	1.000	0.000	nog7_bishop	no	yes	no	no	different	1.000	yes	r1b2r2/p3p1b1/2p1n1k1/2p1PpP1/1p3B2/3P1Q2/qPP1NP2/2KR3R b - - 0 1	1-0	Simic, R.	Dvoretzky, M.	USSR - Jugoslavija 25/384
+2.000	2.000	0.000	2.000	2.000	nog7	no	yes	no	no	same	1.000	yes	3r4/4npk1/1p1q2p1/1R5P/2Pp1P2/3B2Q1/6P1/6K1 b - - 0 1	1/2-1/2	Karpov, An	Korchnoi, V.	Baguio City (m/9) 26/551
+1.000	2.000	0.000	1.000	3.000	g7	no	no	no	no	same	1.000	yes	r2q1rk1/1p1b1ppp/2n1p3/2Pp1P2/p2P4/P1NB4/1P1Q2PP/R4RK1 b - - 0 1	1/2-1/2	Karpov, An	Korchnoi, V.	Baguio City (m/3) 26/648
+2.000	3.000	0.000	1.000	3.000	nog7	no	yes	no	no	same	1.000	yes	r3r1k1/4np1p/2b2qp1/3p1P2/p2P4/P1N3R1/1PBQ3P/5R1K b - - 0 1	1/2-1/2	Karpov, An	Korchnoi, V.	Baguio City (m/3) 26/648
+1.000	4.000	0.000	1.000	2.000	nog7_bishop	no	no	no	no	same	1.000	yes	r3qnk1/1b5p/5np1/1pb2P2/2pp4/6NB/PP1B2PP/R2Q1R1K b - - 0 1	1/2-1/2	Karpov, An	Korchnoi, V.	Baguio City (m/7) 26/652
+3.000	2.000	0.000	2.000	3.000	g7	no	yes	no	no	same	2.000	yes	r4rk1/1pn1q1pp/2p1pp2/p1n4P/2P1BP2/PP1P3P/1B2Q3/R5RK b - - 0 1	1-0	Bellon Lopez, J.	Taimanov, M.	Bucuresti 27/12
+2.000	4.000	1.000	1.000	3.000	nog7_bishop	yes	no	no	no	same	1.000	yes	r4rk1/1p1n1p1p/n1p1p1p1/q3P1NP/2Pp1B2/pPbP2P1/P3QPB1/2RR2K1 b - - 0 1	1-0	Vasiukov, E.	Biyiasas, P.	Hastings 27/13
+3.000	3.000	2.000	0.000	2.000	nog7	no	yes	no	no	different	0.000	yes	rnb4r/2q3kp/p1pp1npR/1p2ppN1/2P5/2NP1BP1/PP1QPP2/2KR4 b - - 0 1	1-0	Iokimidis, G.	Milic, B.	Greece 27/22
+3.000	2.000	0.000	0.000	3.000	g7	no	yes	yes	no	no	1.000	yes	rn3rk1/p2p2pp/1q2pp2/2p5/2P5/P1B1PPQ1/1P3P1P/R3K1R1 b Q - 0 1	1-0	Tarjan, J.	Gheorghiu, F.	Lone Pine 27/567
+2.000	3.000	0.000	1.000	3.000	nog7	no	yes	no	no	same	1.000	yes	6rk/2qnrpbp/3p1p2/p1pP4/PpB1PQP1/1P5R/2PNR2P/7K b - - 0 1	1-0	Vaganian, R.	Jussupow, A.	USSR (ch) 28/112
+1.000	2.000	1.000	1.000	2.000	nog7_bishop	no	no	no	no	different	1.000	yes	r2qr1k1/pp2pp1p/1n5B/3P1P1p/3b4/1QN4P/PP3P2/2KR3R b - - 0 1	1-0	Seoiev	Anikaev, Y.	USSR 28/191
+3.000	2.000	1.000	0.000	2.000	g7	no	yes	no	no	same	1.000	yes	3r1r2/1n1q1ppk/p3n2b/1pppP2Q/4N3/2P1B2P/PP3PP1/3RR1K1 b - - 0 1	1/2-1/2	Stean, M.	Sigurjonsson, G.	Muenchen 28/276
+5.000	4.000	2.000	0.000	3.000	g7	no	no	no	yes	same	2.000	yes	1rb2r1k/q4ppp/2np1N2/p3P1B1/PpP5/1P4bP/2BQ2P1/3R1R1K b - - 0 1	1-0	Radovici, C.	Ciocaltea, V.	Romania (ch) 28/287
+3.000	2.000	0.000	1.000	2.000	nog7_bishop	no	yes	yes	no	different	1.000	yes	r5k1/1pqbbr1p/p2pp1p1/6P1/7R/1PNQB2R/1PP2P1P/2K5 b - - 0 1	1/2-1/2	Liberzon, V.	Szmetan, J.	Buenos Aires 28/377
+1.000	1.000	0.000	2.000	2.000	nog7_bishop	no	no	no	no	different	1.000	yes	r2q1rk1/p3bp2/2p3p1/3p3P/2n2Pp1/2NQB3/PPP5/2KR3R b - - 0 1	1-0	Lein, A.	Larsen, B.	Lone Pine 28/411
+2.000	3.000	1.000	0.000	1.000	nog7	no	yes	no	no	same	1.000	yes	r2r2k1/1bq2p2/1pn2n1Q/p1pB4/4P3/P4N2/1P3PPP/2RR2K1 b - - 0 1	1-0	Rukavina, J.	Frank, V.	Virovitica 28/557
+2.000	2.000	0.000	1.000	1.000	nog7_bishop	no	yes	no	no	same	1.000	yes	2r3k1/1n1qp3/1B2p1pb/1p1P4/4BP2/6QP/8/1R4K1 b - - 0 1	0-1	Timman, J.	Polugaevsky, L.	Breda (m/6) 28/677
+1.000	2.000	0.000	1.000	3.000	nog7	no	no	no	no	no	0.000	yes	r1bq1rk1/1p1npp1p/6pb/p2pP2P/P2P4/2NQ1P2/1P2N1P1/3RKB1R b K - 0 1	1-0	Kupreichik, V.	Jussupow, A.	USSR (ch) 28/712
+2.000	3.000	0.000	1.000	3.000	g7	yes	yes	no	no	different	1.000	yes	r4rk1/pb3ppp/2p2b2/q3pP2/2p1P3/2N1BQ2/PPP4P/2K3RR b - - 0 1	0-1	Schneider, A.	Sax, Gy	Skara 29/355
+2.000	2.000	0.000	1.000	1.000	nog7	no	yes	yes	no	no	0.000	yes	rn3rk1/pp2q1b1/3p1p2/2pPpP2/2P3Qp/2N4P/PP3P2/R3K1R1 b Q - 0 1	1-0	Chiburdanidze, M.	Kasparov, G.	Baku 29/621
+2.000	4.000	1.000	0.000	1.000	nog7	no	no	no	no	same	0.000	yes	3r1rk1/ppn3q1/2n1b2p/2pp1p1N/2P5/1P1PR3/P2Q1NBP/2R3K1 b - - 0 1	0-1	Kasparov, G.	Tempone, M.	Dortmund 30/96
+3.000	3.000	2.000	0.000	1.000	nog7_bishop	no	yes	no	no	same	1.000	yes	6k1/pp1q1rb1/3p2Qp/5p1N/8/P1B4P/1P4PK/8 b - - 0 1	1/2-1/2	Boudy, J.	Stoica, V.	Varna 30/181
+3.000	4.000	0.000	0.000	3.000	g7	yes	yes	no	no	same	2.000	yes	r2q1rk1/nb2bppp/4p3/p1ppP3/P5Q1/3B1N2/1PP2PPP/R1B2RK1 b - - 0 1	1/2-1/2	Vaganian, R.	Liberzon, V.	Baden 30/211
+1.000	2.000	0.000	2.000	2.000	nog7	no	no	no	no	different	0.000	yes	rq3r2/p1p2pk1/2ppbnp1/7p/4P1PP/2N2P2/PPPQ4/2KR1B1R b - - 0 1	1/2-1/2	Castro, O.	Jansa, Vl	Malta (ol) 30/234
+5.000	4.000	2.000	0.000	3.000	g7	no	yes	no	no	same	2.000	yes	r2q2k1/1bp2ppp/1n3b2/p1np1NN1/6Q1/2P4P/1PB2PP1/R1B3K1 b - - 0 1	1-0	Lengyel, L.	Popovic, P.	Pecs 30/296
+2.000	4.000	0.000	0.000	1.000	nog7	no	no	no	no	same	0.000	yes	1r1q4/p3n2p/1pn3k1/2pp2p1/4P3/2PP2PB/PP3Q1P/5RK1 b - - 0 1	1/2-1/2	Shamkovich, L.	Pacis, A.	Malta (ol) 30/310
+1.000	4.000	0.000	1.000	3.000	g7	no	no	no	no	different	1.000	yes	r4rk1/1bq2pp1/p2bp1p1/3pn2P/1p1NPB2/5P2/PPP4Q/1K1R1B1R b - - 0 1	1/2-1/2	Bielczyk, J.	Shamkovich, L.	Malta (ol) 30/401
+4.000	3.000	0.000	1.000	3.000	g7	no	no	no	no	same	1.000	yes	r1r3k1/1p1n1ppp/p4P2/P2Pp3/1b2N3/5Q2/1Pq3PP/R1B2R1K b - - 0 1	1-0	Groszpeter, A.	Vogt, L.	DDR - Magyarorszag 30/479
+2.000	3.000	1.000	0.000	2.000	nog7	no	yes	no	no	same	0.000	yes	rnb3k1/1p3pPp/p3p2Q/q7/1b1r4/1RN5/P1P1B1PP/5RK1 b - - 0 1	1-0	Quinteros, M.	Mahia, G.	Buenos Aires 30/493
+4.000	3.000	0.000	0.000	3.000	g7	no	yes	no	no	same	1.000	yes	r2br1k1/ppqN2pp/4np2/2PR4/6Q1/8/PB4PP/5RK1 b - - 0 1	0-1	Chekhov, V.	Taimanov, M.	USSR 30/568
+4.000	4.000	2.000	0.000	2.000	g7	no	yes	no	no	same	1.000	yes	r2br1k1/pp2qNpp/4nR2/2PR4/6Q1/8/PB4PP/6K1 b - - 0 1	0-1	Chekhov, V.	Taimanov, M.	USSR 30/568
+4.000	2.000	2.000	0.000	2.000	g7	no	no	no	yes	same	2.000	yes	r1rq2k1/pb2npp1/1p2pn1B/1P2N3/1P1P4/3BQ3/5PPP/R3R1K1 b - - 0 1	1-0	Rodriguez, R.	Plachetka, J.	Malta (ol) 30/670
+3.000	2.000	0.000	1.000	3.000	nog7_bishop	no	no	no	yes	same	1.000	yes	2rq1r2/2nn1pbk/p5pp/P1pPpP2/2p1N3/2N1B3/3Q2PP/R4RK1 b - - 0 1	1-0	Suba, M.	Rivas Pastor, M.	Medina del Campo 31/124
+2.000	3.000	0.000	1.000	3.000	g7	no	no	no	no	different	2.000	yes	r1b2rk1/ppqn1pp1/4pn1p/2b5/6P1/3B1N1N/PPPBQP1P/2KR3R b - - 0 1	1-0	Voltchok, A.	Fedorov, V.I.	USSR 31/179
+3.000	4.000	0.000	0.000	3.000	g7	no	yes	no	no	same	1.000	yes	r1b2rk1/1p2bppp/p2p1n2/8/P3PB2/2N3Q1/1qP1B1PP/R4R1K b - - 0 1	1/2-1/2	Polugaevsky, L.	Psakhis, L.	USSR 31/301
+2.000	3.000	1.000	1.000	3.000	g7	no	no	no	no	same	1.000	yes	3rr1k1/ppq2ppp/2pbpnn1/4N3/2PP3P/P5B1/1PB1QPP1/3R1RK1 b - - 0 1	1-0	Djuric, S.	Gipslis, A.	Tallinn 31/349
+3.000	3.000	1.000	0.000	2.000	nog7_bishop	no	no	no	no	same	1.000	yes	r2q1rk1/pp3pbp/n2p1nb1/2p2N2/8/P1N5/1PP1B1PP/R1BQ1RK1 b - - 0 1	1-0	Kuzmin, G.	Dolmatov, S.	USSR (ch) 32/179
+2.000	2.000	1.000	0.000	1.000	nog7_bishop	yes	yes	no	no	same	1.000	yes	2rq1r1k/pp1b4/1nn1ppQ1/3pP3/3P4/1P6/P4PPP/R1BNR1K1 b - - 0 1	1-0	Browne, W.	Braga, F.	Buenos Aires 32/206
+2.000	3.000	2.000	1.000	2.000	nog7	no	yes	no	no	same	0.000	yes	rn3r1k/1b4qp/p2p2pN/3P2Q1/4R2P/8/1PP2PP1/4R1K1 b - - 0 1	0-1	Heinig, W.	Horvath, T.	Trnava 32/240
+2.000	3.000	1.000	0.000	3.000	nog7_bishop	no	yes	no	no	same	1.000	yes	1r2r1k1/1pqb1p1p/p2bpp2/7Q/P1nNB3/2N3B1/1PP3PP/R6K b - - 0 1	1/2-1/2	Urzica, A.	Ghinda, M.-V.	Romania (ch) 32/324
+2.000	3.000	1.000	0.000	2.000	nog7	yes	yes	no	no	same	1.000	yes	r4qkr/3b1p1p/4p3/pn1pP2Q/1n1P4/1P2RN2/5PPP/RB4K1 b - - 0 1	1-0	Fraguela Gil, J.	Fernandez, J.L.	Espana (ch) 32/378
+3.000	4.000	1.000	1.000	2.000	g7	no	yes	no	no	same	2.000	yes	r2q1rk1/5pp1/pn1p1nb1/2pP2N1/1p1bP1P1/1P5R/P1B2PK1/1RBQ1N2 b - - 0 1	1-0	Timoscenko, G.	Yudasin, L.	USSR (ch) 32/441
+3.000	4.000	1.000	1.000	3.000	nog7_bishop	no	no	no	no	no	1.000	yes	r1bqr1k1/1p1n1p1p/p1p3p1/2bpP1N1/5BnP/P1N1P3/1PQ2PP1/2R1KB1R b K - 0 1	0-1	Simic, R.	Spassov, L.	Athens 32/534
+3.000	5.000	1.000	0.000	3.000	g7	no	yes	no	no	same	0.000	yes	rn3r1k/1b1q2pp/pp1p1p2/2pP1N2/7R/6PB/1P1QPP1P/5RK1 b - - 0 1	1-0	Kogan, B.	Browne, W.	USA 32/609
+0.000	1.000	0.000	1.000	3.000	g7	no	no	no	no	no	0.000	yes	2r3k1/p1q2pp1/1pr2n1p/3p2P1/1Q6/P1P1P2P/3NKP2/2R3R1 b - - 0 1	0-1	Kovacevic, Vlat	Kelecevic, N.	Sarajevo 33/537
+2.000	4.000	1.000	1.000	2.000	nog7_bishop	yes	no	no	yes	same	2.000	yes	r1b1r1kb/p4p2/1q4pB/1p1PpP1n/2p1P3/2P5/P2Q1RPN/1BR3K1 b - - 0 1	0-1	Popovic, P.	Gligoric, S.	Jugoslavija 33/577
+3.000	4.000	0.000	0.000	3.000	g7	no	yes	no	no	same	1.000	yes	r1b2rk1/1p2bpp1/pqp1pn1p/8/R6R/1P3NP1/1BQPPPBP/6K1 b - - 0 1	1-0	Passerotti, P.	Sunye Neto, J.	Luzern (ol) 34/11
+1.000	2.000	0.000	1.000	3.000	nog7_bishop	no	yes	no	no	same	1.000	yes	3rnrk1/1bq1bp1p/pp1pp1p1/2n2P2/P1PNP3/BPN4Q/2B3PP/3RR1K1 b - - 0 1	1-0	Nun, Ji	Suba, M.	Eksjo 34/20
+3.000	2.000	0.000	1.000	3.000	nog7_bishop	no	yes	yes	no	different	1.000	yes	2r2rk1/pp1b1pbp/3ppqp1/8/3NP1P1/1P2BP2/P1P4Q/2KR3R b - - 0 1	1-0	Sax, Gy	Murey, J.	Moscow (izt) 34/275
+3.000	5.000	1.000	2.000	2.000	nog7_bishop	no	no	no	no	same	2.000	yes	r4rk1/pbp2p2/1p4p1/n3b1Bp/q3PNPP/2PB1Q2/P4P2/3R1RK1 b - - 0 1	1-0	Sax, Gy	Kasparov, G.	Moscow (izt) 34/560
+3.000	3.000	1.000	2.000	3.000	nog7	no	yes	no	no	no	0.000	yes	r2qr3/1bp3kp/p4ppN/2pP4/2P2PP1/3QP1K1/P7/2R4R b - - 0 1	1-0	Razuvaev, Y.	Averkin, O.	Sochi 34/627
+3.000	3.000	1.000	1.000	0.000	nog7	no	yes	no	no	same	0.000	yes	r2q1nk1/pp4b1/3pb1P1/2pNp2Q/2P1P3/8/PP2B1PP/5RK1 b - - 0 1	0-1	Kasparov, G.	Christiansen, L.	Moscow (izt) 34/709
+3.000	3.000	1.000	0.000	3.000	nog7_bishop	no	no	no	no	same	1.000	yes	rn3rk1/p2b1p1p/3P2p1/q2P2Nn/1p2N3/2p1B3/P3BPPP/Q4RK1 b - - 0 1	0-1	Huerta, R.	Nogueiras, J.	Cuba 35/124
+3.000	2.000	0.000	1.000	3.000	g7	no	yes	no	no	same	2.000	yes	rq1r1bk1/1b1n1ppp/pp1p4/3P4/2P2P2/PP1B3R/1B2Q1PP/3R2K1 b - - 0 1	1-0	Ermenkov, E.	Ivanovic, B.	Plovdiv 35/234
+2.000	5.000	1.000	1.000	3.000	nog7_bishop	no	yes	no	no	same	1.000	yes	2r2rk1/1bq2pbp/p2ppnp1/1p3PB1/4P2Q/nNN2B2/1PP3PP/3R1R1K b - - 0 1	1-0	Karlsson, L.	Rantanen, Y.	Helsinki 35/278
+2.000	4.000	1.000	1.000	3.000	nog7_bishop	no	yes	no	no	same	1.000	yes	2r2rk1/1q1n1pbp/3p1npB/p4P2/1p1N3Q/5P2/PPP1N2P/3R1R1K b - - 0 1	1-0	Karlsson, L.	Rantanen, Y.	Helsinki 35/278
+2.000	2.000	0.000	2.000	2.000	g7	no	no	no	no	different	2.000	yes	1rb2rk1/q3bpp1/2p2P2/3pp2p/4n1P1/1PNB3P/P2BQ3/2K3RR b - - 0 1	1-0	Vilela, J.	Diaz, J.C.	La Habana 35/309
+4.000	4.000	2.000	0.000	2.000	nog7_bishop	no	yes	no	no	same	2.000	yes	r5k1/1q1b1p1n/3p2pB/1pbPp1N1/p6Q/7P/PPB2PP1/2R3K1 b - - 0 1	1-0	Lerner, K.	Beliavsky, A.	USSR (ch) 35/455
+3.000	4.000	2.000	0.000	2.000	nog7_bishop	no	no	no	yes	same	2.000	yes	r2b2k1/1q1brp1n/3p2pB/np1PpN2/p3P3/5N1P/PPBQ1PP1/2R1R1K1 b - - 0 1	1-0	Lerner, K.	Beliavsky, A.	USSR (ch) 35/455
+2.000	2.000	0.000	0.000	3.000	nog7	no	no	no	no	same	0.000	yes	r4rk1/3b1p1p/p1p1pp2/8/4N3/q4B2/2PQ2PP/3R3K b - - 0 1	~	Fedder, S.	Van der Wiel, J.	Plovdiv 35/(357)
+4.000	1.000	1.000	1.000	3.000	g7	no	yes	no	no	different	2.000	yes	r4rk1/1q2bpp1/p1b1pn1p/4B3/1p2N2P/3B2R1/PPP1QPP1/2KR4 b - - 0 1	1-0	Lerner, K.	Jansa, Vl	Bratislava 36/265
+3.000	3.000	0.000	0.000	3.000	nog7_bishop	no	yes	no	no	same	1.000	yes	r1b1r2k/1p3pbp/p1q2p2/3Np3/P3P3/2B3Q1/1PP1B1PP/5R1K b - - 0 1	1-0	Panchenko, A.	Geller, E.	Sochi 36/314
+2.000	2.000	1.000	1.000	3.000	nog7	no	yes	no	no	same	1.000	yes	r2q2k1/1b2rp2/1p3bpp/p2pNn2/3P1P2/P1N4R/BP1Q2PP/4R1K1 b - - 0 1	1-0	Kharitonov, A.Y.	Psakhis, L.	USSR 36/529
+4.000	5.000	1.000	0.000	3.000	nog7_bishop	no	yes	no	no	same	1.000	yes	1r1qnrk1/4ppbp/2pp2p1/n2bP1N1/1p1PNBQ1/1P4PP/P4PB1/R3R1K1 b - - 0 1	0-1	Tseshkovsky, V.	Geller, E.	Sochi 36/695
+4.000	3.000	1.000	1.000	3.000	g7	no	no	no	yes	same	2.000	yes	r1bq1rk1/pp3ppp/3p1n2/5nN1/2P2P2/3B4/PB4PP/RQ3RK1 b - - 0 1	~	Gruenberg, H.-U.	Knaak, R.	DDR (ch) 36/(666)
+2.000	4.000	1.000	1.000	0.000	nog7_bishop	no	yes	no	no	same	1.000	yes	2r2r2/1bqn2k1/pp2p2Q/2p1npP1/2P5/2BPP3/P5BP/R4R1K b - - 0 1	1-0	Lechtynsky, J.	Padevsky, N.	Kragujevac 37/16
+1.000	3.000	0.000	1.000	0.000	nog7_bishop	no	no	no	no	same	1.000	yes	2r5/1bqn1r1k/ppn1p3/2p1bpP1/2P5/2NPP3/PB2Q1BP/R5RK w - - 0 1	1-0	Lechtynsky, J.	Padevsky, N.	Kragujevac 37/16
+2.000	2.000	1.000	0.000	0.000	nog7	no	yes	no	no	different	0.000	yes	2r2rk1/p3pqbR/1pn5/3N4/2P2p2/5N2/PP2QP2/2KR4 b - - 0 1	1-0	Miles, A.	Mestel, J.	London 37/48
+2.000	2.000	0.000	2.000	3.000	nog7_bishop	no	no	no	no	different	1.000	yes	r4rk1/4ppbp/2qpbnp1/7P/p2BP1P1/1P3P2/1PPQN3/1K1R1B1R w - - 0 1	1-0	Estevez, G.	Diaz, J.C.	Cuba (ch) 37/235
+4.000	3.000	1.000	0.000	2.000	nog7_bishop	no	yes	no	no	same	2.000	yes	2r2r2/pp2bpk1/4n1p1/3qpR2/4B1Q1/4B3/PPP4P/R6K b - - 0 1	1-0	Diaz, J.C.	Zapata, A.	Bayamo 37/256
+2.000	2.000	1.000	0.000	0.000	nog7	no	no	no	no	same	0.000	yes	rnb5/1p3Q2/1n5k/1p2p3/4N2b/6P1/PPP4P/6K1 b - - 0 1	1-0	Alzate, D.	Diaz, J.C.	Bayamo 37/299
+2.000	3.000	1.000	0.000	1.000	nog7_bishop	no	yes	no	no	same	1.000	yes	r3q3/3n1r1k/5p1B/pPp1pp2/2p5/R6Q/2P3PP/4R1K1 b - - 0 1	1-0	Gruenberg, H.-U.	Tseshkovsky, V.	Halle 37/329
+4.000	4.000	2.000	0.000	3.000	nog7_bishop	no	no	no	yes	same	2.000	yes	r1br2kb/p2q1p1p/1p4pB/2nP1N2/2p5/2P5/P1BQ1PPP/3R1RK1 b - - 0 1	1/2-1/2	Mikhalchishin, A.	Lukacs, P.	Spartakus - Trud 37/524
+1.000	3.000	1.000	1.000	2.000	nog7	no	yes	no	no	same	0.000	yes	3r4/pq3k1p/1p1r2p1/5PQ1/2p5/2P5/P6P/4RRK1 b - - 0 1	1/2-1/2	Mikhalchishin, A.	Lukacs, P.	Spartakus - Trud 37/524
+2.000	3.000	0.000	0.000	2.000	nog7_bishop	no	no	no	no	same	1.000	yes	r2q4/p4pk1/1p2rn1p/2n3p1/3B4/6N1/PP4PP/R2Q1R1K b - - 0 1	1-0	Fedorowicz, J.	Cserna, L.	Lugano 38/107
+3.000	4.000	0.000	0.000	2.000	nog7_bishop	no	no	no	no	same	1.000	yes	r2q2k1/p4p2/1p1nrn1p/6p1/3B4/5QN1/PP4PP/R4R1K b - - 0 1	1-0	Fedorowicz, J.	Cserna, L.	Lugano 38/107
+3.000	4.000	2.000	1.000	2.000	g7	yes	yes	no	no	same	0.000	yes	5r1k/3R1pp1/p3pN1n/4P2Q/5P2/2P4P/qr4P1/6RK b - - 0 1	1/2-1/2	Bergstrom, Ch	Ghinda, M.-V.	Hamburg 38/234
+4.000	3.000	2.000	0.000	3.000	nog7_bishop	no	yes	no	no	same	2.000	yes	6k1/5p1p/p1q2np1/1pb1BR2/8/1B4QP/PPP3PK/3r4 w - - 0 1	1-0	Hjartarson, J.	Kindermann, S.	Thessaloniki (ol) 38/242
+3.000	2.000	0.000	0.000	3.000	g7	yes	yes	no	no	different	2.000	yes	r4rk1/4bpp1/p3p2p/qp1bP3/3B2Q1/P2B4/1PP3PP/1K1R1R2 b - - 0 1	1-0	Gyorkos, L.	Hazai, L.	Magyarorszag 38/260
+2.000	3.000	0.000	1.000	3.000	g7	yes	no	no	no	same	1.000	yes	r3nrk1/p1qbbppp/3ppP2/4P3/1p6/2NP1N2/PP2Q1PP/R1B2R1K b - - 0 1	1/2-1/2	Cebalo, M.	Sokolov, Andrei	Novi Sad 38/320
+4.000	3.000	1.000	1.000	3.000	g7	no	yes	no	no	same	2.000	yes	r1b1nrk1/1q3ppp/p2p3B/1pnN1P2/8/PB4Q1/1bP2PPP/3RR1K1 b - - 0 1	1-0	Ftacnik, L.	Gobet, F.	Biel 38/338
+2.000	3.000	1.000	2.000	3.000	g7	no	no	no	yes	no	2.000	yes	r1b2r1k/ppq2ppB/4pb1p/2n3P1/7P/2P2N2/PPQ2P2/R1B1K2R b KQ - 0 1	1-0	Ree, H.	Ghinda, M.-V.	Thessaloniki (ol) 38/399
+3.000	2.000	0.000	0.000	3.000	g7	no	no	no	no	same	2.000	yes	r1r3k1/2qbb1p1/p2p1p1p/np1Pp3/3P3N/3B3P/PP2QPP1/R1BR2K1 b - - 0 1	1-0	Hon Kah Seng, Ch	Marjanovic, Slavo	Jugoslavija - Asia 38/443
+2.000	3.000	1.000	0.000	1.000	nog7_bishop	no	no	no	yes	same	2.000	yes	2rqr1k1/3nb2p/pn1pp1B1/1pp5/3P4/1P3N2/PB1N1PPP/RQ4K1 b - - 0 1	1-0	Short, N.	Tseshkovsky, V.	Yerevan 38/454
+4.000	3.000	0.000	1.000	2.000	nog7_bishop	no	no	no	no	same	1.000	yes	q3rbk1/2n2p1n/3p2p1/1p1Pp3/1P2N1NP/2P2Q2/5P2/2BR2K1 b - - 0 1	1/2-1/2	Karpov, An	Kasparov, G.	Moscow (m/46) 38/459
+3.000	3.000	2.000	0.000	2.000	nog7_bishop	no	no	no	no	same	0.000	yes	2r2rk1/p4p2/1q2n2p/1p1pQN2/2p4B/2P5/P4PPP/2R3K1 b - - 0 1	1/2-1/2	Huerta, R.	Nogueiras, J.	Santa Clara 38/547
+3.000	2.000	0.000	1.000	2.000	nog7_bishop	no	no	no	no	same	2.000	yes	1r3rk1/pb3pbp/1p6/2pB1P2/2P2R1q/8/PB1Q2PP/1R4K1 b - - 0 1	1/2-1/2	Ftacnik, L.	Hjartarson, J.	Thessaloniki (ol) 38/605
+4.000	2.000	1.000	0.000	2.000	g7	no	yes	no	yes	different	2.000	yes	r2qr1k1/p2n1pp1/1pp1b2B/3pP3/7p/P1NBP3/1PQ2P2/2K3R1 b - - 0 1	1/2-1/2	Short, N.	Petrosian, A.	Yerevan 38/649
+3.000	3.000	2.000	1.000	1.000	nog7_bishop	no	yes	no	no	same	1.000	yes	1r1q2k1/p4pb1/1p3nn1/5NQ1/3B3P/1P4P1/P4PK1/4R3 b - - 0 1	1/2-1/2	Sokolov, Andrei	Torre, E.	Novi Sad 38/706
+0.000	3.000	0.000	2.000	3.000	g7	no	no	no	no	same	0.000	yes	r2q1rk1/p1n2ppp/1pp2b2/3pPP2/5P2/2N5/PP4BP/2RQ1RK1 b - - 0 1	1/2-1/2	Tukmakov, V.	Sosonko, G.	Tilburg 38/718
+1.000	1.000	1.000	1.000	1.000	nog7_bishop	no	no	no	no	different	1.000	yes	r2q1rk1/pp1n1p2/4pn1B/2b4P/3N4/8/PPP1QPP1/2KRR3 b - - 0 1	1-0	Dolezal, M.	Vogt, L.	Budapest 39/186
+4.000	3.000	0.000	0.000	3.000	g7	no	yes	no	no	same	2.000	yes	r4rk1/1b2bppp/p3pn2/R3q3/1n6/1NNBB2Q/1PP3PP/5R1K b - - 0 1	1-0	Kurajica, B.	Timman, J.	Reggio Emilia 39/198
+1.000	2.000	0.000	1.000	3.000	nog7	no	no	no	no	same	0.000	yes	r2q1r2/1p2ppkp/2bp2p1/p1n2P2/2P1P3/2N5/PP1QB1PP/R4R1K b - - 0 1	1-0	Gufeld, E.	Dolmatov, S.	USSR 39/209
+0.000	2.000	0.000	1.000	3.000	nog7	no	no	no	no	same	0.000	yes	3r1r2/1p2ppkp/2bp1np1/q7/p1P1PP2/P1NR4/1P1Q2PP/4RB1K b - - 0 1	1-0	Gufeld, E.	Dolmatov, S.	USSR 39/209
+2.000	2.000	2.000	0.000	2.000	g7	no	no	no	no	same	0.000	yes	r4r2/1p2Rppk/p2p4/3P2N1/Pnq5/8/1P4PP/R2Q3K b - - 0 1	0-1	Tal, M.	Kiik, K.	Tallinn 39/287
+2.000	4.000	1.000	1.000	2.000	nog7_bishop	no	no	no	no	same	1.000	yes	1rb1r1k1/2q2pBp/p2pp3/1p4P1/4P3/P1Nn2Q1/1PP4P/R4RK1 b - - 0 1	1-0	Ftacnik, L.	Prandstetter, E.	Praha (zt) 39/301
+3.000	3.000	0.000	1.000	3.000	nog7_bishop	yes	no	no	no	same	2.000	yes	r4rk1/1b1nbp1p/p2p1np1/q3pP2/p3P2N/2N5/BPP1Q1PP/R1B2R1K b - - 0 1	1-0	Ftacnik, L.	Dolmatov, S.	Moscow 39/329
+3.000	4.000	2.000	2.000	0.000	nog7_bishop	no	no	no	no	same	2.000	yes	2r2r1k/1p1b1B2/1q1bp2P/p2p1nPQ/3P4/4B3/PPN5/R4RK1 b - - 0 1	1-0	Gulko, B.	Sveshnikov, E.	USSR (ch) 39/345
+2.000	4.000	1.000	0.000	1.000	nog7	no	yes	no	yes	same	1.000	yes	r1b4k/pp3r2/2nbp1Qp/3p4/3P4/6N1/Pq3PPP/1BR2RK1 b - - 0 1	1/2-1/2	Ivanchuk, V.	Serper, G.	USSR 39/355
+2.000	4.000	1.000	1.000	2.000	g7	no	yes	no	no	same	1.000	yes	r4rk1/p1qnbpp1/1pn4B/2ppP2P/1P1P4/P1P2NR1/5PP1/R2Q1K2 b - - 0 1	1-0	Gulko, B.	Dolmatov, S.	USSR 39/366
+1.000	3.000	1.000	2.000	2.000	nog7_bishop	no	no	no	no	no	2.000	yes	r1bq1rk1/pp3pb1/2p1pnp1/6Bp/2BPP1PP/1QP2N2/P4P2/R3K2R b KQ - 0 1	1-0	Mokry, K.	Kurajica, B.	Reggio Emilia 39/454
+1.000	2.000	0.000	2.000	2.000	nog7	no	no	no	no	same	0.000	yes	3r1bk1/pp1q1p2/2b1n1p1/3pP2p/5P1P/1N6/P1Q1B1P1/R4RK1 b - - 0 1	1-0	Mokry, K.	Kurajica, B.	Reggio Emilia 39/454
+4.000	2.000	1.000	0.000	2.000	nog7_bishop	no	yes	no	yes	no	2.000	yes	r2q1rk1/pp2p1bp/1n2b1pB/2pnP3/3PB3/2N5/PP2NPP1/R1Q1K2R b KQ - 0 1	0-1	Spraggett, K.	Portisch, L.	Wijk aan Zee 39/467
+1.000	2.000	0.000	2.000	2.000	nog7	no	no	no	no	different	0.000	yes	r4rk1/4np2/2q2pb1/1pPp2P1/1P3Q1P/2N1P3/1K3P2/3R3R b - - 0 1	0-1	Portisch, L.	Miles, A.	Reggio Emilia 39/484
+3.000	6.000	2.000	1.000	2.000	g7	no	yes	no	no	same	1.000	yes	r2qr3/pp1n2pk/2n1p2p/6RQ/3p1B1P/6P1/PP3PB1/5RK1 b - - 0 1	1-0	Klinger, J.	Nogueiras, J.	Graz 39/491
+3.000	2.000	1.000	1.000	3.000	nog7_bishop	yes	no	no	yes	same	2.000	yes	1n1qr1kb/3b3p/p3pppB/1p2P2P/3P4/R2B1P2/P2QN1P1/6K1 b - - 0 1	1-0	Ghinda, M.-V.	Ftacnik, L.	Praha (zt) 39/569
+3.000	4.000	1.000	0.000	3.000	g7	no	no	no	no	same	0.000	yes	r3qrk1/1bbn1pp1/p4n1p/1p1p1N2/2pP3B/P1N3PB/1P1QPP1P/R2R2K1 b - - 0 1	1-0	Chernin, A.	Beliavsky, A.	Tunis (izt) 39/645
+3.000	3.000	1.000	0.000	2.000	nog7	no	yes	no	no	same	1.000	yes	4q1k1/p4p2/2br2p1/4b1N1/2Rp3Q/1P1B2P1/P3PP2/6K1 b - - 0 1	1-0	Sokolov, Andrei	Gavrikov, Vi	USSR (ch) 39/659
+3.000	3.000	0.000	0.000	1.000	nog7	no	yes	no	no	same	1.000	yes	1r4k1/3q3p/pr1pnn2/2p5/2Pb3Q/2NBN2P/1P6/1R3R1K b - - 0 1	1-0	Minic, D.	Psakhis, L.	Banjaluka 39/732
+2.000	2.000	0.000	1.000	2.000	nog7	no	no	no	no	no	0.000	yes	r2q1rk1/pn1b3p/1p3p2/2pPp2P/4P2N/2R5/P2QBPP1/4K2R b K - 0 1	~	Chudinovskih, A.	Pushkin	USSR 39/(562)
+1.000	1.000	1.000	3.000	3.000	g7	no	no	no	no	different	1.000	yes	1r4k1/p4pp1/r3p2p/qp2R1PP/1nPB1P2/1P6/P2R1Q2/1K6 b - - 0 1	1-0	Groszpeter, A.	Marjanovic, Slavo	Zenica 41/141
+3.000	1.000	0.000	0.000	3.000	nog7	no	yes	no	no	different	1.000	yes	2rr1qk1/1p3p2/p1n2p1p/3Nb3/1PB1Rp2/P6R/2P1Q1PP/1K6 b - - 0 1	1/2-1/2	Rodriguez, Am	Barbulescu, D.	La Habana 41/210
+1.000	3.000	0.000	1.000	3.000	nog7_bishop	no	no	no	no	same	1.000	yes	r2q1rk1/4pp1p/2bp2p1/p7/pn1BPP2/2P2B2/1P4PP/R2Q1RK1 b - - 0 1	1-0	Zarudnij	Lukin, A.	USSR 41/228
+3.000	4.000	0.000	1.000	3.000	nog7_bishop	no	yes	no	no	same	1.000	yes	1rb1r1k1/2q2pbp/2n1p1p1/1p2n1P1/4N2Q/1N2B3/1PP3BP/3R1R1K b - - 0 1	1/2-1/2	Jansa, Vl	Tseshkovsky, V.	Calcutta 41/266
+3.000	3.000	1.000	1.000	2.000	nog7_bishop	no	no	no	yes	same	2.000	yes	r1bqr1k1/pp5p/2p2bpB/4p3/4BP2/2P5/PPQ3PP/R4RK1 b - - 0 1	1-0	Nikolic, Zi	Ivanovic, B.	Jugoslavija (ch) 41/335
+1.000	4.000	1.000	1.000	3.000	g7	yes	no	no	no	same	1.000	yes	r4rk1/p1qn1ppp/1p2p1n1/1PppP1B1/3P3P/2P2N2/2P1QPP1/R4RK1 b - - 0 1	1-0	Prandstetter, E.	Mokry, K.	Praha 41/355
+3.000	2.000	0.000	1.000	2.000	nog7_bishop	no	yes	no	no	same	2.000	yes	q5k1/1b1Rrp2/2n4p/1p2p2P/1bp1P1Q1/2P5/2B2PP1/2B3K1 b - - 0 1	1-0	Tseshkovsky, V.	Yudasin, L.	Minsk 41/404
+1.000	2.000	0.000	2.000	3.000	g7	no	no	no	no	no	1.000	yes	r1bq1rk1/p2n1pp1/4pb1p/1pp5/3P2PP/2NBPN2/PP1Q1P2/R3K2R b KQ - 0 1	0-1	Geller, E.	Douven, R.	Eindhoven - CSKA 41/508
+2.000	3.000	1.000	2.000	2.000	nog7_bishop	no	no	no	no	same	1.000	yes	r2qr1k1/p3p2p/1p3p1B/b2P1Pp1/2p1P2P/8/PQ4P1/1R3RK1 b - - 0 1	0-1	Tseshkovsky, V.	Khalifman, A.	USSR (ch) 41/527
+2.000	1.000	0.000	1.000	1.000	nog7	no	no	no	no	same	1.000	yes	6k1/3r3p/2p1pr2/1bP4P/4B3/qP1p4/3Q1P1K/2RR4 b - - 0 1	1-0	Geller, E.	Olafsson, H.	Reykjavik 41/575
+3.000	4.000	1.000	1.000	3.000	nog7_bishop	no	yes	no	no	same	2.000	yes	3r4/p3bpkp/1p2P1p1/1q3B1P/2rP4/P5Q1/6P1/B4RK1 b - - 0 1	1-0	Novikov, I.	Glek, I.	USSR 41/600
+2.000	5.000	1.000	0.000	3.000	nog7_bishop	no	yes	no	no	same	1.000	yes	r2q1rk1/1p2ppbp/p5pB/3n1b2/3P3Q/2N2N2/PP3PPP/R4RK1 b - - 0 1	~	Meduna, E.	Glek, I.	Praha 41/(134)
+1.000	2.000	0.000	2.000	3.000	g7	no	no	no	no	no	1.000	yes	r1bq1rk1/p2n1pp1/4pb1p/1pp5/3P2PP/2NBPN2/PP1Q1P2/R3K2R b KQ - 0 1	~	Faibisovich, V.	Epishin, V.	USSR 41/(508)
+2.000	2.000	0.000	1.000	3.000	g7	no	no	no	no	different	1.000	yes	r2q1rk1/ppp2pp1/1n3b1p/8/3P1Q1P/1BN2P2/PP3P2/2KR3R b - - 0 1	~	Faibisovich, V.	Epishin, V.	USSR 41/(508)
+0.000	4.000	0.000	2.000	3.000	g7	no	no	no	no	same	1.000	yes	1nrr2k1/2q1bppp/b3p3/2p2PP1/ppN1P3/1P1PB2P/P4QB1/3R1RK1 b - - 0 1	1-0	Romanishin, O.	Pigusov, E.	Irkutsk 42/7
+1.000	3.000	0.000	1.000	3.000	nog7_bishop	no	no	no	no	same	1.000	yes	rn1q1rk1/4bp1p/1np3p1/3pPp2/p2P2P1/1PN1B2P/P3Q2N/2R2RK1 b - - 0 1	1-0	Shabalov, A.	Khalifman, A.	USSR 42/130
+0.000	3.000	0.000	2.000	3.000	nog7_bishop	yes	no	no	yes	different	1.000	yes	r1bq1rk1/1pp1npbp/p1n1p1p1/3pP3/3P1PP1/2N1BN2/PPPQ3P/2KR1B1R b - - 0 1	0-1	Kljako, D.	Rogulj, B.	Citta di Castello 42/134
+2.000	2.000	1.000	1.000	3.000	g7	no	no	no	no	same	2.000	yes	b1r2rk1/5pp1/p3pn1p/1pb1NP2/8/P2B4/qPP1Q1PP/2BR1R1K b - - 0 1	0-1	Speelman, J.	Chandler, M.	Great Britain (ch) 42/155
+4.000	2.000	1.000	1.000	2.000	nog7_bishop	no	no	no	no	same	2.000	yes	r2qr1k1/1b2bpn1/ppn1p1p1/4N3/2P1B1P1/2N5/PP2Q2P/R1B2R1K b - - 0 1	1-0	Bellon Lopez, J.	Sax, Gy	Dubai (ol) 42/197
+3.000	3.000	2.000	0.000	2.000	nog7_bishop	no	no	no	no	same	1.000	yes	3qr1k1/1p2pp2/p5pB/n2pN3/P2Pn3/2r5/6PP/R3QR1K b - - 0 1	1-0	Yrjola, J.	Kindermann, S.	Dubai (ol) 42/236
+0.000	3.000	0.000	2.000	3.000	g7	no	no	no	yes	different	1.000	yes	r4rk1/2qnbppp/2bp4/p3p1PP/1p2P3/4BPN1/PPPQ4/2KR1B1R b - - 0 1	1-0	Pinter, J.	Sax, Gy	Philadelphia 42/253
+2.000	2.000	1.000	1.000	2.000	g7	no	yes	yes	no	different	0.000	yes	3r2r1/2q2ppk/3pb3/p1n1p1RP/1p2P3/5P2/PPP1B1Q1/1KNR4 b - - 0 1	1-0	Jansa, Vl	Ernst, Th	Gausdal (open) 42/270
+1.000	2.000	0.000	1.000	3.000	g7	yes	no	no	no	same	2.000	yes	rnb1nrk1/2q1bppp/p2pp3/1p2P3/3N1P2/2NB4/PPP3PP/R1B1QR1K b - - 0 1	0-1	Ghinda, M._V.	Bellon Lopez, J.	Dubai (ol) 42/281
+3.000	4.000	0.000	0.000	3.000	g7	yes	yes	no	no	same	1.000	yes	rn3rk1/1bqnbppp/p3p3/1p2P3/3N4/2N2BQ1/PPP3PP/R1B2R1K b - - 0 1	0-1	Ghinda, M._V.	Bellon Lopez, J.	Dubai (ol) 42/281
+3.000	3.000	1.000	0.000	2.000	nog7	no	no	no	no	same	0.000	yes	r1b2r1k/5p1p/p3pNq1/1pn5/3Q4/8/PPP1B1PP/5R1K b - - 0 1	0-1	Ghinda, M._V.	Bellon Lopez, J.	Dubai (ol) 42/281
+4.000	4.000	1.000	0.000	3.000	g7	no	yes	no	no	same	2.000	yes	r4rk1/1bqn1ppp/p2bpn2/1p4B1/7Q/1NNB4/PPP3PP/R4R1K b - - 0 1	0-1	Ghinda, M._V.	Bellon Lopez, J.	Dubai (ol) 42/281
+3.000	3.000	0.000	0.000	3.000	g7	no	no	no	no	same	1.000	yes	rnb2rk1/ppp1nppp/4p3/8/4N3/qR1B1N2/P1PQ1PPP/5RK1 b - - 0 1	1-0	Vaganian, R.	Timman, J.	Amsterdam 42/352
+2.000	3.000	1.000	0.000	3.000	g7	no	no	no	no	same	2.000	yes	r3r1k1/pbqn1pp1/1p3n1p/2pp1N2/3P4/P1PBPP2/R5PP/2BQ1RK1 w - - 0 15	1-0	Heemskerk, Fenny	Padevsky, Nikola	GMA op
+0.000	3.000	0.000	1.000	3.000	g7	no	no	no	no	same	2.000	yes	r4rk1/1bq1bppp/p1nppn2/1p6/4PP2/1NNBBQ2/PPP3PP/4RRK1 w - - 0 14	0-1	Popovic, Petar	Ulibin, Mikhail	GMA op
+1.000	2.000	0.000	2.000	3.000	g7	no	no	no	no	different	0.000	yes	1r3rk1/4bppp/2pp4/p1q3P1/R3PQ1P/8/PPP5/2KN3R w - - 0 25	1-0	Panno, Oscar	Vasiukov, Evgeni	GMA op
+1.000	2.000	0.000	1.000	3.000	nog7_bishop	no	no	no	no	no	1.000	yes	r1qn1rk1/pp2npbp/2p1b1p1/2N1p3/1P2P2P/P2P2P1/2QBNPB1/R3K2R w KQ - 0 18	1-0	Prins, Lodewijk	Sunye Neto, Jaime	GMA op
+2.000	2.000	1.000	1.000	3.000	g7	no	no	no	no	same	0.000	yes	r2r1nk1/pp2npp1/1bp1q2p/4N3/P3P1NP/BPP3P1/2Q1BP2/R4bK1 w - - 0 21	0-1	Chernin, Alexander	Vasiukov, Evgeni	GMA op
+1.000	3.000	0.000	1.000	3.000	nog7_bishop	no	no	no	no	same	1.000	yes	r2q1rk1/pp1n1pbp/3p2p1/5P1n/3p4/2N2N2/PPP3PP/R1BQ1RK1 w - - 0 12	1/2-1/2	Ubilava, Elizbar	Bareev, Evgeny	GMA op
+2.000	2.000	1.000	1.000	3.000	nog7	no	no	no	no	same	0.000	yes	b4rk1/5p1p/p1n3p1/3R1N2/qp2QP2/8/1P3P1P/2R3K1 w - - 0 29	1-0	Klinger, Josef	Gutman, Lev	GMA op
+2.000	5.000	1.000	0.000	3.000	nog7	no	no	no	no	same	0.000	yes	5r2/p3pNbk/2p1Pppp/3p4/5Q2/q2b1NP1/5PBP/4R1K1 w - - 0 32	1-0	Kupreichik, Viktor D	Kochyev, Alexander	GMA op
+2.000	3.000	0.000	0.000	3.000	g7	no	yes	no	no	same	1.000	yes	3r2k1/pp3qpp/2p2pn1/2b5/3p2Q1/1P1P1N2/1PPB1PPP/4R1K1 w - - 0 22	1-0	Anand, Viswanathan	Lau, Ralf	GMA op
+0.000	3.000	0.000	1.000	3.000	g7	yes	no	no	no	same	1.000	yes	r2q1rk1/pp1n1ppb/2p1p2p/2bpP3/2P3P1/1P3P2/PB1NP1BP/R2Q1R1K w - - 0 15	1/2-1/2	Campora, Daniel Hugo	Lobron, Eric	GMA op
+2.000	2.000	0.000	1.000	2.000	g7	no	no	no	no	same	1.000	yes	q2r3k/3rb1p1/2n1p2p/1pp2n2/4NP2/P2PPN2/3RQ2P/BR5K w - - 0 32	1-0	Reshevsky, Samuel Herman	Lukov, Valentin	GMA op
+2.000	4.000	0.000	1.000	3.000	g7	no	no	no	no	same	1.000	yes	r3r1k1/pp1bqpp1/5n1p/2pPp2P/P1P2B2/2P2QN1/6P1/R3R1K1 w - - 0 22	1-0	Petrosian, Arshak B	Malaniuk, Vladimir P	GMA op
+1.000	3.000	0.000	0.000	2.000	g7	no	no	no	no	no	2.000	yes	rn1q1rk1/pbp1b1pp/1p1pp3/5p2/2PP1B2/P1QBPN2/1P3PPP/R3K2R w KQ f6 0 11	1-0	Krasenkow, Michal	Anastasian, Ashot	GMA op
+1.000	2.000	0.000	3.000	3.000	g7	yes	no	no	no	different	2.000	yes	5rk1/1bqn1ppp/p3p3/3pP3/nb1B1PPP/3B4/P1P1NQ2/2KR3R w - - 0 20	0-1	Yudasin, Leonid	Campora, Daniel Hugo	GMA op
+2.000	2.000	0.000	1.000	2.000	g7	yes	yes	no	no	same	0.000	yes	4qrk1/1p4p1/4p2p/2prP3/5P1R/P1R1b1P1/1PQ3KP/8 w - - 0 34	0-1	Westerinen, Heikki MJ	Glek, Igor V	GMA op
+1.000	1.000	0.000	1.000	3.000	nog7	no	no	no	no	same	0.000	no	r1b3k1/ppR2p1p/6p1/4p3/2N1qP2/4P3/PP1Q2PP/6K1 b - - 0 1	1/2-1/2	Smyslov, V.	Eingorn, V.	Sochi 42/524
+1.000	1.000	0.000	0.000	3.000	g7	yes	no	no	no	same	1.000	no	r4rk1/pp1b1ppp/4p3/n2pP3/3P3q/B1PB4/P4PP1/R2QR1K1 b - - 0 1	1-0	Loginov, Va	Psakhis, L.	Sverdlovsk 44/218
+2.000	4.000	1.000	0.000	3.000	g7	yes	no	no	yes	same	1.000	no	rr2b1k1/pp2nppp/2n1p3/qB1pP1B1/P1pP4/2P2N2/2P2PPP/R1Q2RK1 b - - 0 1	1-0	Knaak, R.	Tischbierek, R.	Halle 44/367
+1.000	2.000	0.000	0.000	2.000	g7	no	no	no	no	same	0.000	no	1n4k1/1r1q2p1/p3p1p1/1pBp4/3P4/1QP4P/P5P1/5R1K b - - 0 1	1-0	Vladimirov, E.	Tseshkovsky, V.	USSR 44/374
+1.000	3.000	0.000	0.000	2.000	nog7	no	no	no	no	same	0.000	no	3r3r/p4pkn/R2pq1p1/1p2p1p1/1P2P3/3P1QNP/1P3PP1/4R1K1 b - - 0 1	1-0	Romanishin, O.	Yudasin, L.	Lviv 44/387
+1.000	1.000	0.000	0.000	2.000	nog7_bishop	no	no	no	no	same	1.000	no	1n1q1rk1/1pp1n1b1/3p2pp/r1PPpp2/N3P3/8/P2N1PPP/R1BQR1K1 b - - 0 1	1-0	Stefanov, Pa	Ghinda, M._V.	Romania (ch) 44/401
+1.000	4.000	0.000	1.000	3.000	g7	no	yes	no	no	same	1.000	no	rn1q1rk1/1p3pp1/2p1p1bp/p7/PbNPP1QP/6P1/1B3PB1/R4RK1 b - - 0 1	1-0	Chekhov, V.	Gelfand, B.	Halle 44/446
+4.000	3.000	1.000	0.000	3.000	g7	no	no	no	no	same	1.000	no	r2q1rk1/pp2bppp/1np3b1/4PN2/3P4/1QN1BR2/PP4PP/R5K1 b - - 0 1	1-0	Campos Moreno, J.	Sokolov, I.	Sevilla 44/459
+0.000	2.000	0.000	1.000	3.000	g7	no	no	no	no	same	1.000	no	r1b2rk1/1p1n1ppp/2p5/p3q3/4PP2/3BQ3/P2N2PP/2R2RK1 b - - 0 1	1-0	Inkiov, V.	Eingorn, V.	Zagreb (izt) 44/524
+2.000	3.000	1.000	0.000	3.000	nog7_bishop	no	no	no	yes	same	2.000	no	r1b1r1k1/pp1q1pbp/6p1/n1pPp1B1/4P3/2PB4/P2QNPPP/2R2RK1 b - - 0 1	1-0	Lputian, S.	Vyzmanavin, A.	Lviv 44/565
+1.000	1.000	0.000	1.000	3.000	g7	no	no	no	no	different	1.000	no	r1b2rk1/1p2qnpp/pB1ppp2/Q4n2/2P2P2/2NB4/PP4PP/2KR3R b - - 0 1	1-0	Sokolov, An	Kasparov, G.	Belfort 45/16
+1.000	2.000	0.000	1.000	2.000	g7	no	no	no	no	same	2.000	no	3r1r1k/6pp/1p6/2pBP3/q4P2/2B3P1/P3Q2P/5RK1 b - - 0 1	0-1	Agdestein, S.	Sosonko, G.	Wijk aan Zee 45/117
+2.000	3.000	1.000	0.000	2.000	nog7	no	no	no	yes	same	1.000	no	r4r1k/pp3pqp/3P4/5Q2/2p1B3/P5P1/1P3P1P/5RK1 b - - 0 1	1-0	Miralles, G.	Ftacnik, L.	Lyon 45/466
+2.000	3.000	0.000	0.000	3.000	g7	yes	no	no	no	same	1.000	no	r2r2k1/ppp2pp1/2b1p2p/n3P1q1/3P2N1/2PB2PP/P3QP2/1R3RK1 b - - 0 1	1-0	Frias, V.	Chernin, A.	Saint John (open II) 45/481
+2.000	2.000	2.000	0.000	2.000	g7	no	no	no	no	same	0.000	no	6k1/1p3pp1/p4n2/1q1pQ2B/1P6/r3P1P1/5P1P/2R3K1 b - - 0 1	1-0	Sokolov, An	Karpov, An	Bruxelles 45/612
+2.000	2.000	0.000	0.000	3.000	g7	no	no	no	no	same	2.000	no	r2q1rk1/pb1n1ppp/1p2pb2/2pP4/2P5/3B1N2/PP2QPPP/R1BR2K1 b - - 0 1	~	Serper, G.	Gelfand, B.	Vilnius 45/(503)
+3.000	5.000	0.000	0.000	2.000	nog7_bishop	no	yes	no	no	same	0.000	no	1r2r2k/2q3bp/pp1p2p1/n2QP2n/P3P3/7R/1PPN2BP/5RBK b - - 0 1	1/2-1/2	Ftacnik, L.	Zapata, A.	Thessaloniki (ol) 46/314
+2.000	5.000	0.000	0.000	3.000	g7	no	no	no	no	same	1.000	no	3rrnk1/ppbq1ppp/2p5/4p2b/1PP1Q2N/P2n1NPP/1B3PB1/3R1RK1 b - - 0 1	0-1	Chernin, A.	Spraggett, K.	Paris 47/5
+0.000	2.000	0.000	1.000	3.000	g7	no	no	no	no	same	0.000	no	r1b1r1k1/pp3ppp/2pBn3/q7/2P2P2/4Q1P1/P3P1BP/1R1R2K1 b - - 0 1	1-0	Huebner, R.	Salov, Va	Barcelona 47/6
+0.000	2.000	0.000	0.000	1.000	nog7_bishop	no	no	no	no	same	1.000	no	r1q1r1k1/pp1n2b1/4b2p/2p1ppp1/2Pn4/QPNNB1PP/P2RPPB1/2R3K1 w - - 0 22	0-1	Udovcic, M.	Forintos, Gy	Vrnjacka Banja 1/430
+1.000	3.000	0.000	0.000	2.000	nog7	no	no	no	no	same	0.000	no	2rr2k1/4q2p/1p2pnp1/p2b1p2/4n3/PP2NNP1/1Q2PPBP/2RR2K1 w - - 0 21	1-0	Hoen, R.	Petrosian, T.	La Habana (ol) 2/64
+2.000	4.000	0.000	0.000	2.000	g7	yes	no	no	no	same	1.000	no	5rk1/pp1bbrpp/1qn1p1n1/3pP3/1P1P4/P1N2NPB/R5KP/2BQ1R2 w - - 0 20	1-0	Bukal, V.	Maric, R.	Vukovar 2/181
+0.000	2.000	0.000	1.000	2.000	g7	no	no	no	no	same	1.000	no	4r1k1/3b2pp/8/1p1p1p2/1q1PnP2/3B1NP1/4QP1P/2R3K1 b - - 0 24	1-0	Pfleger, H.	Gligoric, S.	Den Haag 2/502
+1.000	3.000	0.000	0.000	3.000	g7	no	no	no	no	same	1.000	no	r4rk1/1b1n1ppp/pp1qp3/3p4/Q2P4/P2BPN2/1P3PPP/R4RK1 w - - 0 16	1/2-1/2	Reshevsky, S.	Petrosian, T.	Santa Monica 2/532
+1.000	3.000	0.000	0.000	3.000	g7	no	no	no	no	same	1.000	no	r1q2rk1/pp2bppp/2n1pn2/8/3pP3/1Q1P1BP1/PP2NP1P/R1B2RK1 w - - 0 13	0-1	Timman, J.	Vadasz, L.	Groningen 3/22
+0.000	2.000	0.000	0.000	3.000	g7	no	no	no	no	same	0.000	no	1r3rk1/ppq2pp1/2npb2p/2p1p3/2P5/P1PPN1P1/2Q1PPBP/1R1R2K1 w - - 0 18	1/2-1/2	Matanovic, A.	Pachman, L.	Vrnjacka Banja 3/24
+1.000	3.000	0.000	0.000	3.000	g7	no	no	no	no	same	1.000	no	r1q1rbk1/ppp2pp1/2np3p/4p3/1PP5/2NP2Pb/P3PPBP/1RBQ1RK1 w - - 0 15	1-0	Gheorghiu, F.	Petrosian, T.	Moscow 3/36
+1.000	2.000	0.000	0.000	3.000	g7	no	no	no	no	same	1.000	no	2r2rk1/p2n1pp1/1pq2n1p/3p4/1RNPp3/2P1B1PP/P1Q1PP2/2R2BK1 b - - 0 20	0-1	Basman, M.	Hartston, W.	Hastings 3/39
+0.000	3.000	0.000	1.000	3.000	nog7_bishop	no	no	no	no	same	1.000	no	rnq2rk1/pp3pbp/2pp1np1/4p3/2P1PPb1/1PNP2P1/P3N1BP/R1BQ1RK1 w - - 0 11	1-0	Portisch, F.	Dely, P.	Magyarorszag 3/41
+3.000	3.000	0.000	0.000	2.000	nog7_bishop	no	no	no	yes	same	1.000	no	3nnrk1/pppq1rbp/3pb1p1/3Np3/2P1P3/4BPP1/PP1QN1BP/4RRK1 w - - 0 16	1/2-1/2	Smyslov, V.	Liberzon, V.	USSR 3/44
+1.000	3.000	0.000	0.000	1.000	nog7_bishop	no	no	no	no	same	1.000	no	r4rk1/1ppqn1b1/3pn1p1/1P2p2p/2P1N3/3PPPNb/7P/1RBQR1KB w - h6 0 19	0-1	Murey, J.	Bakulin, N.	USSR 3/46
+1.000	2.000	0.000	1.000	3.000	g7	no	no	no	no	same	1.000	no	brqrn1k1/5ppp/ppnppb2/8/P1P1PP2/1PN3P1/1BN1Q1BP/1R1R2K1 w - - 0 21	1-0	Kholmov, R.	Taimanov, M.	USSR (ch) 3/48
+1.000	2.000	0.000	1.000	3.000	nog7	no	no	no	no	same	0.000	no	R7/4ppk1/6pp/p3q3/1pb4P/P4BP1/1P1RPPK1/8 w - - 0 28	1/2-1/2	Taimanov, M.	Polugaevsky, L.	USSR (ch) 3/53
+2.000	1.000	0.000	0.000	3.000	nog7_bishop	no	no	no	no	no	1.000	no	2r2rk1/p2ppp1p/bpn2np1/q2N4/2P1P3/1QP2P2/P2BB1PP/R3K2R w KQ - 0 16	1/2-1/2	Taimanov, M.	Korchnoi, V.	Tallinn 3/55
+0.000	3.000	0.000	1.000	2.000	nog7_bishop	no	no	no	no	same	1.000	no	1r3rbk/4n1bp/p2p2p1/qpp1pp2/1nP2P2/1PNPP1PP/P2RN1B1/B1Q2RK1 w - - 0 18	1-0	Polugaevsky, L.	Lein, A.	USSR (ch) 3/56
+0.000	2.000	0.000	0.000	3.000	nog7_bishop	no	no	no	no	no	1.000	no	1rr3k1/p2q1p1p/3pbbp1/1P2p3/1n6/2NPP1PP/5PB1/1RBQK2R w K - 0 17	0-1	Korchnoi, V.	Szabo, L.	Leningrad 3/57
+0.000	3.000	0.000	0.000	2.000	nog7_bishop	no	no	no	no	same	1.000	no	1r3rk1/p2q2b1/1pn1b1pp/1NP1pp2/Q7/P1nPP1P1/5PBP/1RB2RK1 w - - 0 19	1-0	Bobotsov, M.	Nikolaevsky, Y.	Sofia 3/58
+0.000	4.000	0.000	1.000	3.000	nog7_bishop	no	no	no	no	same	1.000	no	1rbq1rk1/4ppbp/p1np1np1/1pp5/2P1PP2/2NP1NP1/PP4BP/1RBQ1RK1 w - b6 0 11	1/2-1/2	Najdorf, M.	Bronstein, D.	Moscow 3/59
+2.000	4.000	0.000	0.000	2.000	nog7_bishop	no	no	no	yes	same	1.000	no	3r1rk1/pb1qn1bp/1pnp2p1/1Np1pp2/1PP2B2/P2P1NP1/4PPBP/1RQ1R1K1 w - - 0 15	1-0	Byrne, R.	Byrne, D.	USA (ch) 3/61
+1.000	4.000	0.000	0.000	3.000	nog7_bishop	no	no	no	no	same	1.000	no	1r1q1rk1/4ppbp/2np2p1/1p3b2/1P1Pn3/1RN2NP1/4PPBP/2BQ1RK1 w - - 0 15	1-0	Filip, M.	Stein, L.	Moscow 3/62
+1.000	3.000	0.000	0.000	3.000	nog7_bishop	no	no	no	no	same	1.000	no	r2q1rk1/pp1nppbp/3pb1p1/8/2P1P3/1PNQ2P1/P4PBP/R1B2RK1 w - - 0 13	1-0	Shamkovich, L.	Suetin, A.	Leningrad 3/64
+1.000	3.000	0.000	0.000	3.000	nog7_bishop	no	no	no	no	same	1.000	no	r2q1rk1/pp1nppbp/3pb1p1/8/2P1P3/1PNQ2P1/P4PBP/R1B2RK1 w - - 0 13	1-0	Shamkovich, L.	Suetin, A.	Leningrad 3/64
+1.000	2.000	0.000	0.000	3.000	nog7_bishop	no	no	no	no	same	1.000	no	3rr1k1/p2bppbp/qp1p1np1/8/2P1P3/1PNQ2PP/P2B1PB1/2RR2K1 w - - 0 17	0-1	Osnos, V.	Krogius, N.	USSR (ch) 3/65
+1.000	2.000	0.000	0.000	2.000	nog7_bishop	no	no	no	no	same	2.000	no	rnnq1rk1/pp1b2bp/3p2p1/2pPpp2/P1N1P3/2NB4/1PP2PPP/R1BQ1RK1 w - - 0 11	1-0	Espig, L.	Csulits, A.	Colditz 3/67
+2.000	4.000	1.000	0.000	3.000	nog7_bishop	no	no	no	no	same	2.000	no	r2q1rk1/pb1nppbp/1p4p1/2pp2B1/3Pn3/2PBPN2/PP1NQPPP/3R1RK1 w - - 0 11	1-0	Savon, V.	Lein, A.	USSR (ch) 3/72
+1.000	3.000	1.000	0.000	2.000	nog7_bishop	no	no	no	no	same	1.000	no	r2q1rk1/4n1bp/2ppbnp1/4ppB1/1pP1P3/PNN2P2/4B1PP/R2Q1R1K w - - 0 17	1/2-1/2	Zapata, Alonso	Eingorn, Vereslav S	GMA op
+2.000	4.000	0.000	0.000	3.000	nog7_bishop	no	no	no	no	same	1.000	no	r5k1/pp2bp1p/q4np1/3p4/3NnB2/P1P2QN1/1P3PPP/4R1K1 w - - 0 22	1/2-1/2	Dokhoian, Yury	Geller, Efim P	GMA op
+1.000	4.000	0.000	0.000	3.000	nog7	no	no	no	no	same	0.000	no	rn3rk1/1b2qp1p/p2pp1p1/8/Nb1P4/3Q1NP1/1P2PPBP/2R2RK1 w - - 0 15	1/2-1/2	Spassov, Liuben	Kochyev, Alexander	GMA op
+1.000	1.000	0.000	0.000	3.000	g7	no	no	no	no	same	2.000	no	2rqr1k1/3nbppp/p1bp4/1p6/1P2P3/P6P/1BBN1PP1/R2QR1K1 w - - 0 19	0-1	Romanishin, Oleg M	Kotronias, Vasilios	GMA op
+1.000	5.000	0.000	0.000	2.000	g7	no	no	no	no	same	1.000	no	rnbq1rk1/pp2b1pp/2p1p3/3p1p2/2PPnB2/1Q3NP1/PP2PPBP/RN3RK1 w - f6 0 10	1/2-1/2	Bareev, Evgeny	Kuzmin, Gennadi P	GMA op
+0.000	2.000	0.000	0.000	2.000	nog7_bishop	no	no	no	no	same	1.000	no	r1bq1r1k/2pnn1bp/1p1p2p1/p2Pp3/1PP1Pp2/P1N2P2/2QNB1PP/1RB2RK1 w - - 0 15	1/2-1/2	Gruenberg, Hans Ulrich	Lerner, Konstantin Z	GMA op
+0.000	4.000	0.000	0.000	1.000	nog7_bishop	no	no	no	no	same	0.000	no	1r2r2k/p2b2b1/5q1p/1ppP4/3pPp2/P2P1P2/4QBBP/1R3R1K w - - 0 30	1-0	Shabalov, Alexander	Lobron, Eric	GMA op
+1.000	3.000	0.000	0.000	3.000	g7	no	no	no	no	same	1.000	no	2rr2k1/pp1qb1pp/nn2bp2/2p1p3/4N3/1P1PPNP1/P2B1PBP/1QRR2K1 w - - 0 17	1/2-1/2	Smejkal, Jan	Murey, Jacob	GMA op
+1.000	3.000	0.000	0.000	3.000	g7	no	no	no	no	same	2.000	no	r2qr1k1/pbpn1pp1/1p3n1p/3p4/3P4/P1PBPPN1/6PP/R1BQ1RK1 w - - 0 13	1-0	Heemskerk, Fenny	Padevsky, Nikola	GMA op
+0.000	3.000	0.000	0.000	2.000	g7	no	no	no	no	same	1.000	no	1r3rk1/1b1nb1pp/p3q3/1pp1pp2/8/1P1PPNP1/PBQ2PBP/R2R2K1 w - - 0 22	1/2-1/2	Lein, Anatoly	Spiridonov, Nikola	GMA op
+2.000	3.000	0.000	0.000	3.000	g7	no	no	no	no	same	0.000	no	r5k1/pp4pp/nq1rpp2/2p5/b1P4B/8/PP1QBPPP/R4RK1 w - - 0 19	0-1	Gavrikov, Viktor	Tiviakov, Sergei	GMA op
+1.000	3.000	0.000	0.000	3.000	g7	no	no	no	no	same	2.000	no	2rq1rk1/pb2bpp1/1p2p2p/n1p5/3P4/P1PBPN2/1B2QPPP/3R1RK1 w - - 0 15	1-0	Anastasian, Ashot	Vyzmanavin, Alexey	GMA op
+1.000	4.000	0.000	0.000	2.000	nog7_bishop	no	no	no	no	same	1.000	no	r2q1rk1/bpp2p2/p1np1n1p/P3p1pb/1PB1P3/2PP1NBP/5PP1/RN1Q1RK1 w - - 0 14	1-0	Tseitlin, Mikhail S	Yudasin, Leonid	GMA op
+1.000	3.000	0.000	0.000	2.000	nog7_bishop	no	no	no	no	same	1.000	no	r1b1qrk1/1pp1p1bp/n2p2p1/p2P4/2PNn3/6P1/PP3PBP/R1BQ1RK1 w - - 0 12	1/2-1/2	Piskov, Yury	Cvitan, Ognjen	GMA op
+1.000	2.000	0.000	0.000	3.000	nog7_bishop	no	no	no	no	same	1.000	no	3q1rk1/pr1nppbp/b2p2p1/3P4/4P3/1P4P1/2N2PBP/1RBQR1K1 w - - 0 18	1-0	Smejkal, Jan	Dorfman, Josif D	GMA op
+0.000	3.000	0.000	0.000	3.000	g7	no	no	no	no	same	0.000	no	r1b1r1k1/pp3ppp/nq1p1n2/3Pp3/1pP1P3/P5P1/1P1N1PBP/R2QNRK1 w - - 0 14	1-0	Fauland, Alexander	Farago, Ivan	GMA op
+1.000	3.000	1.000	0.000	3.000	nog7_bishop	no	no	no	no	same	2.000	no	r3r1k1/1bp2p1p/p2p1qpB/np2p2n/4P3/2PPbNPP/PPB1QP2/R2R2K1 w - - 0 18	1-0	Fishbein, Alexander	Galdunts, Sergey	GMA op
+2.000	3.000	1.000	0.000	3.000	g7	no	no	no	no	same	1.000	no	r1qrb1k1/1p2bpp1/p3pn1p/4N3/1PP5/P2B2B1/4QPPP/3R1RK1 w - - 0 19	0-1	Dolmatov, Sergey	Gelfand, Boris	GMA op
+0.000	2.000	0.000	1.000	3.000	nog7_bishop	no	no	no	no	same	1.000	no	r3r1k1/p2n1pbp/3p1np1/qppP4/4PP2/2N1BB1P/PP4P1/R2QR1K1 w - b6 0 15	0-1	Yurtaev, Leonid	Glek, Igor V	GMA op
+1.000	4.000	0.000	0.000	3.000	g7	no	no	no	no	same	1.000	no	r1b2rk1/pp3ppp/nq2pb2/2n5/5B2/2N2NP1/PP1RPPBP/R2Q2K1 w - - 0 15	1/2-1/2	Yudasin, Leonid	Gurevich, Dmitry	GMA op
+2.000	3.000	0.000	1.000	3.000	g7	no	no	no	yes	same	1.000	no	2r2rk1/pb1n1ppp/1p2pb1q/8/1P2P2P/P1B3P1/1Q1N1PB1/R4RK1 w - - 0 19	1-0	Karpman, Vadim	Hansen, Curt	GMA op
+1.000	2.000	0.000	0.000	3.000	nog7_bishop	no	no	no	no	same	1.000	no	2r2rk1/p2qnpbp/bp1p2p1/8/4Pp2/NQP1B1P1/PP4BP/R3R1K1 w - - 0 17	1-0	Shirov, Alexei	Kaidanov, Gregory S	GMA op
+5.000	2.000	0.000	0.000	3.000	nog7_bishop	no	no	no	no	same	2.000	no	r4rk1/1p2qpbp/p2N2p1/3Bn3/4P1b1/1Q2B3/PP4PP/3R1RK1 w - - 0 20	1-0	Lautier, Joel	Kharitonov, Andrei Y	GMA op
+0.000	2.000	0.000	1.000	3.000	g7	no	no	no	no	same	0.000	no	5rk1/1q3ppp/pBn1pb2/1p6/5P2/1PP3PP/P3N2K/3R2Q1 w - - 0 27	1/2-1/2	Kochyev, Alexander	Kholmov, Ratmir D	GMA op
+1.000	1.000	0.000	0.000	3.000	g7	no	no	no	no	different	1.000	no	1r2r1k1/3b1ppp/p1p5/2np4/1q1N4/4B3/PPP2PPP/1K1RRQ2 w - - 0 19	1/2-1/2	Lputian, Smbat G	Kramnik, Vladimir	GMA op
+0.000	4.000	0.000	0.000	3.000	g7	no	no	no	no	same	1.000	no	r2q1rk1/pb2bppp/1pn5/2pp4/3Pn3/1P2PNP1/PB1N1PBP/R2Q1RK1 w - - 0 12	0-1	Khalifman, Alexander	Kuzmin, Gennadi P	GMA op
+2.000	2.000	0.000	1.000	2.000	nog7_bishop	no	no	no	yes	same	1.000	no	4r3/pp2p1bk/5pp1/3q3p/2rP1B1P/2P2P2/P1RQ1KP1/4R3 w - - 0 25	1-0	Spassov, Liuben	Lein, Anatoly	GMA op
+0.000	2.000	0.000	0.000	3.000	g7	no	no	no	no	same	0.000	no	r1b2rk1/1p3ppp/5q2/p1p5/2Pp4/1Q3BP1/PP2PP1P/R2R2K1 w - - 0 20	1/2-1/2	Eingorn, Vereslav S	Makarichev, Sergey	GMA op
+1.000	2.000	0.000	0.000	3.000	nog7_bishop	no	no	no	no	same	2.000	no	1rb2rk1/2qn1pbp/1pp2np1/4p3/4P3/2NB1N1P/1PPB1PP1/R2QR1K1 w - - 0 15	0-1	Azmaiparashvili, Zurab	Malisauskas, Vidmantas	GMA op
+1.000	3.000	0.000	0.000	3.000	nog7_bishop	no	no	no	no	same	1.000	no	r1b1qrk1/p1p2pb1/p5pp/2P1p3/4Pn2/2N1BN1P/PP3PP1/R2Q1RK1 w - - 0 16	1/2-1/2	Timoscenko, Gennadij	Miles, Anthony J	GMA op
+3.000	2.000	1.000	0.000	3.000	g7	no	no	no	yes	no	2.000	no	r1bqrnk1/ppp1bppp/5n2/3p2B1/3P4/2NBP3/PPQ1NPPP/R3K2R w KQ - 0 10	1-0	Panchenko, Alexander N	Padevsky, Nikola	GMA op
+2.000	3.000	0.000	0.000	3.000	g7	no	no	no	no	same	1.000	no	r3r1k1/pp1bqppp/6n1/3Pn3/2p1P3/2NB2NP/PP1Q2P1/3R1RK1 w - - 0 20	1-0	Panchenko, Alexander N	Padevsky, Nikola	GMA op
+1.000	1.000	1.000	0.000	2.000	g7	no	no	no	no	same	2.000	no	1n1qr1k1/1br3pp/pp2pn2/4N3/PbBP4/1PN5/1B2Q1PP/2RR2K1 w - - 0 20	1/2-1/2	Spiridonov, Nikola	Panno, Oscar	GMA op
+1.000	4.000	0.000	0.000	3.000	nog7_bishop	no	no	no	no	same	1.000	no	r1b2rk1/pp1nppb1/2n3pp/q1p5/2P5/1QN1BNP1/PP2PPBP/3R1RK1 w - - 0 12	1/2-1/2	Tseshkovsky, Vitaly	Petrosian, Arshak B	GMA op
+0.000	3.000	0.000	0.000	3.000	g7	no	no	no	no	same	1.000	no	r4rk1/pp1nqppp/2pbpn2/3p4/2PP4/1P3BP1/PB1NPP1P/R2Q1RK1 w - - 0 11	1/2-1/2	Vladimirov, Evgeny	Pigusov, Evgeny	GMA op
+1.000	4.000	0.000	0.000	3.000	nog7_bishop	no	no	no	no	same	2.000	no	r1b1r1k1/1p1nqpbp/p2p1np1/2pP4/P3PB2/2NB1N1P/1P3PP1/R2Q1RK1 w - - 0 13	1/2-1/2	Minasian, Artashes	Psakhis, Lev	GMA op
+0.000	2.000	0.000	0.000	2.000	nog7_bishop	no	no	no	no	same	1.000	no	r1b1q1k1/1p4b1/2p3pp/p2n1p2/P4p2/1NPP2P1/1P1B2BP/R2Q2K1 w - - 0 19	0-1	Shabalov, Alexander	Rogers, Ian	GMA op
+2.000	3.000	1.000	0.000	3.000	g7	no	no	no	no	same	1.000	no	r3r1k1/1pq2pp1/2pb3p/p2n2B1/P2N2b1/2P3P1/1PQ2PBP/R3R1K1 w - - 0 20	1/2-1/2	Vyzmanavin, Alexey	Ubilava, Elizbar	GMA op
+1.000	1.000	0.000	0.000	3.000	g7	no	no	no	no	same	0.000	no	4rr1k/1p1b1ppp/p4nq1/P7/4p3/1P2Q2P/2PNBPP1/R3R2K w - - 0 24	0-1	Lobron, Eric	Zapata, Alonso	GMA op
+1.000	3.000	0.000	0.000	1.000	nog7_bishop	no	no	no	no	same	1.000	no	1r3rk1/p1n1pbbp/3p1n2/1p1P2p1/1P3pq1/1NN3P1/P2QPPBP/B1R2RK1 w - - 0 20	1-0	Kramnik, Vladimir	Dautov, Rustem	GMA op
+1.000	3.000	0.000	0.000	3.000	nog7_bishop	no	no	no	no	same	1.000	no	r4nk1/1p2qpbp/2p2np1/8/3BP3/pPN2B1P/P1Q2PP1/5RK1 w - - 0 22	0-1	Bagirov, Vladimir	Fauland, Alexander	GMA op
+0.000	4.000	0.000	0.000	3.000	g7	no	no	no	no	same	0.000	no	r1r3k1/3nbppp/pq2pn2/1pp5/P2Pb3/BP2NNP1/Q3PPBP/R4RK1 w - - 0 15	0-1	Smagin, Sergey	Galliamova, Alisa	GMA op
+0.000	1.000	0.000	0.000	3.000	g7	no	no	no	no	same	0.000	no	1r1r2k1/1bq2pp1/5b1p/pBp1p3/P3P3/2p5/1P2QPPP/R1N1R1K1 w - - 0 22	1/2-1/2	Szekely, Peter	Geller, Efim P	GMA op
+2.000	4.000	1.000	0.000	3.000	g7	no	no	no	no	same	1.000	no	1nbq1rk1/1rp2ppp/p2b1n2/3PN3/PppN1B2/6P1/1P3PBP/R2Q1RK1 w - - 0 16	1-0	Klinger, Josef	Gutman, Lev	GMA op
+2.000	2.000	0.000	0.000	3.000	g7	no	no	no	no	same	1.000	no	1nr2rk1/2q1bppp/pp1ppn2/8/2P5/1PN1PN1P/PBQ2PP1/2RR2K1 w - - 0 18	1/2-1/2	Dokhoian, Yury	Karpman, Vadim	GMA op
+1.000	4.000	1.000	0.000	3.000	g7	no	no	no	no	same	1.000	no	r2q1rk1/1pp1bppp/2b1pn2/p5B1/PnQP4/2N2NP1/1P2PPBP/R2R2K1 w - - 0 13	1-0	Tunik, Gennady	Khalifman, Alexander	GMA op
+3.000	4.000	0.000	0.000	3.000	nog7_bishop	no	yes	no	no	same	1.000	no	5rk1/p3ppbp/b1p3p1/3pP3/4N2Q/r4NP1/q4PBP/2B1R1K1 w - - 0 27	1-0	Kupreichik, Viktor D	Kochyev, Alexander	GMA op
+1.000	3.000	0.000	0.000	3.000	nog7_bishop	no	no	no	no	same	0.000	no	rn1q1rk1/pb2ppbp/1p4p1/2p5/2pPP2B/2P5/P2NBPPP/1R1Q1RK1 w - - 0 14	1/2-1/2	Huzman, Alexander	Lerner, Konstantin Z	GMA op
+1.000	3.000	0.000	1.000	2.000	nog7_bishop	no	no	no	no	same	0.000	no	5bk1/5b2/1p1q2pp/2p2p2/r2P1P1B/1pP1Q3/1P4BP/4R1K1 w - - 0 32	0-1	Shabalov, Alexander	Rogers, Ian	GMA op
+1.000	3.000	0.000	0.000	3.000	nog7_bishop	no	no	no	no	same	1.000	no	rn3rk1/pq3pbp/3p1np1/3Pp3/1pb1P3/5PP1/PP3R1P/RNB1QBK1 w - - 0 18	1-0	Soltis, Andrew E	Panchenko, Alexander N	GMA op
+1.000	3.000	0.000	0.000	3.000	nog7_bishop	no	no	no	no	same	1.000	no	r1bqr1k1/5pb1/p2p1npp/npp1p3/4P2B/2PPNN2/PPB2PPP/R2QR1K1 w - - 0 16	0-1	Romanishin, Oleg M	Smirin, Ilia	GMA op
+2.000	1.000	0.000	0.000	2.000	nog7	no	no	no	no	same	1.000	no	4r3/1brq1pk1/p2p2p1/1pp1p2p/1P2Pn2/PBPPN2P/3Q1PPK/R3R3 w - - 0 29	0-1	Romanishin, Oleg M	Smirin, Ilia	GMA op
+2.000	3.000	0.000	0.000	2.000	nog7_bishop	no	no	no	yes	same	1.000	no	r4rbk/pp2p1bp/1qp3p1/3p1p2/3P1B2/2P3PB/PP1QPP1P/R3R1K1 w - - 0 18	1/2-1/2	Glek, Igor V	Spassov, Liuben	GMA op
+1.000	3.000	0.000	0.000	3.000	nog7_bishop	no	no	no	no	same	1.000	no	r1r3k1/pp2npbp/3p2p1/1q1Pp3/1P6/3P2P1/Q3PPBP/R1B2RK1 w - - 0 17	1/2-1/2	Malisauskas, Vidmantas	Spiridonov, Nikola	GMA op
+1.000	3.000	1.000	0.000	2.000	nog7_bishop	no	no	no	no	same	1.000	no	r1r3k1/pp3pb1/3p3p/1q1PppB1/1P6/3P2P1/Q3PP1P/R4RK1 w - - 0 20	1/2-1/2	Malisauskas, Vidmantas	Spiridonov, Nikola	GMA op
+3.000	4.000	0.000	0.000	3.000	nog7_bishop	no	no	no	yes	same	2.000	no	r3r3/ppnb1pbk/3p1qpp/2pP4/2P2B2/1P1B1N1P/P2Q1PP1/4RRK1 w - - 0 19	1-0	Gheorghiu, Florin	Timoscenko, Gennadij	GMA op
+1.000	2.000	0.000	0.000	3.000	nog7_bishop	no	no	no	no	same	1.000	no	r1b2rk1/pp1nqpbp/2pp1np1/4p3/2PPP3/2N2N2/PPQ1BPPP/R1BR2K1 w - - 0 10	1-0	Zapata, Alonso	Titov, German	GMA op
+0.000	2.000	0.000	0.000	2.000	nog7_bishop	no	no	no	no	same	0.000	no	r1b2rk1/pp2qpb1/3p1n1p/2pPp3/2P1Pn2/2N1NpB1/PPQ1B1PP/R2R2K1 w - - 0 18	1-0	Zapata, Alonso	Titov, German	GMA op
+2.000	1.000	0.000	0.000	2.000	g7	no	no	no	no	same	1.000	no	3brrk1/1p1q2pp/p2pp3/P7/4b3/2PQB1P1/1P3P1P/R3R1K1 w - - 0 20	1/2-1/2	Marjanovic, Slavoljub	Veroci, Zsuzsa	GMA op
+1.000	3.000	0.000	0.000	3.000	nog7_bishop	no	no	no	no	same	1.000	no	r1bq1rk1/pp3pbp/n4np1/2pp4/2Q1P3/2N2N2/PP2BPPP/R1B2RK1 w - - 0 11	1-0	Popovic, Petar	Vladimirov, Evgeny	GMA op
+1.000	3.000	1.000	0.000	3.000	nog7_bishop	no	no	no	no	same	1.000	no	3r1rk1/pp3pbp/nq3np1/2pPBb2/2Q5/2N2N2/PP2BPPP/R4RK1 w - - 0 14	1-0	Popovic, Petar	Vladimirov, Evgeny	GMA op
+1.000	3.000	0.000	0.000	3.000	nog7	no	no	no	no	same	0.000	no	1q2r1k1/2nb1p1p/3p2p1/1p1P4/1Pp1P3/2b2N1P/1Q3PP1/4RBK1 w - - 0 27	1-0	Stefansson, Hannes	Vyzmanavin, Alexey	GMA op
+0.000	2.000	0.000	0.000	2.000	g7	no	no	no	no	same	0.000	no	2r2rk1/pp1b2pp/1q1Pp3/3p1p2/8/P2nPN2/1P2QPPP/2RR2K1 w - - 0 20	1-0	Arakhamia Grant, Ketevan	Yurtaev, Leonid	GMA op
+2.000	1.000	1.000	1.000	2.000	g7	no	no	no	no	same	0.000	no	2r3k1/2r3p1/1p1qp2p/1b1pNp2/1P1Q1P2/2R1P3/6PP/2R3K1 w - - 0 28	1-0	Arakhamia Grant, Ketevan	Yurtaev, Leonid	GMA op
+1.000	2.000	0.000	0.000	3.000	g7	no	no	no	no	same	1.000	no	r4rk1/3p1ppp/pPb1nq2/8/2Nb4/5P2/1P2Q1PP/RNB2R1K w - - 0 20	0-1	Mikhalchishin, Adrian	Anand, Viswanathan	GMA op
+1.000	3.000	0.000	0.000	3.000	g7	no	no	no	no	same	2.000	no	r4rk1/1q1bbppp/p2ppn2/2n5/3NP3/1BN1BP2/PP3QPP/R4RK1 w - - 0 17	0-1	Zaichik, Gennadi	Arakhamia Grant, Ketevan	GMA op
+0.000	4.000	0.000	0.000	3.000	nog7_bishop	no	no	no	no	same	1.000	no	r1bqr1k1/ppp1ppbp/1n4p1/n2P4/8/2N1PNP1/PP3PBP/R1BQ1RK1 w - - 0 11	1-0	Huzman, Alexander	Cvitan, Ognjen	GMA op
+0.000	2.000	0.000	0.000	2.000	g7	yes	no	no	no	same	0.000	no	5rk1/1pp1brp1/2n1p2p/4P2q/p7/PN1R1NP1/1P2QPKP/4R3 w - - 0 23	0-1	Westerinen, Heikki MJ	Glek, Igor V	GMA op
+1.000	3.000	0.000	0.000	3.000	nog7_bishop	no	no	no	no	same	1.000	no	r1bqnrk1/1n3pbp/pp1p2p1/2pPp3/1PP1P3/P1N3P1/3N1PBP/1RBQ1RK1 w - - 0 14	1/2-1/2	Rashkovsky, Nukhim N	Hansen, Curt	GMA op
