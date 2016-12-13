@@ -4,11 +4,11 @@ from os import path, walk
 import sys
 from setuptools import setup, find_packages
 
-NAME = "EVC rules add-on"
+NAME = "ABML add-on"
 
 VERSION = "0.0.1"
 
-DESCRIPTION = "Add-on implements rule learning with EVC search heuristics"
+DESCRIPTION = "Add-on implements argument based machine learning algorithms"
 LONG_DESCRIPTION = open(path.join(path.dirname(__file__), 'README.md')).read()
 
 LICENSE = "BSD"
@@ -18,14 +18,13 @@ KEYWORDS = (
     # can be installed using the Orange Add-on Manager
     'orange3 add-on',
     'rule learning',
-    'extreme value correction',
-    'logistic regression'
+    'argument-based machine learning',
 )
 
 PACKAGES = find_packages()
 
 PACKAGE_DATA = {
-    'orangecontrib.evcrules': [],
+    'orangecontrib.abml': [],
     #'orangecontrib.evcrules.widgets': ['icons/*'],
 }
 
@@ -41,7 +40,7 @@ ENTRY_POINTS = {
     # Entry points that marks this package as an orange add-on. If set, addon will
     # be shown in the add-ons manager even if not published on PyPi.
     'orange3.addon': (
-        'evcrules = orangecontrib.evcrules',
+        'abml = orangecontrib.abml',
     ),
     # Entry point used to specify packages containing tutorials accessible
     # from welcome screen. Tutorials are saved Orange Workflows (.ows files).
@@ -65,7 +64,7 @@ ENTRY_POINTS = {
 
 NAMESPACE_PACKAGES = ["orangecontrib"]
 
-TEST_SUITE = "orangecontrib.evcrules.tests.suite"
+TEST_SUITE = "orangecontrib.abml.tests.suite"
 
 
 def include_documentation(local_dir, install_dir):
@@ -83,7 +82,7 @@ def include_documentation(local_dir, install_dir):
     DATA_FILES.extend(doc_files)
 
 if __name__ == '__main__':
-    include_documentation('doc/build/html', 'help/orange3-evcrules')
+    include_documentation('doc/build/html', 'help/orange3-abml')
     setup(
         name=NAME,
         version=VERSION,

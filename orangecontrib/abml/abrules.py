@@ -36,12 +36,12 @@ class ABRuleLearner(RulesStar):
 
     def fit_storage(self, data):
         if "Arguments" not in data.domain:
-            warn("No meta attribute representing Arguments! Learning without arguments.")
+            #warn("No meta attribute representing Arguments! Learning without arguments.")
             learner = RulesStar(preprocessors=self.preprocessors,
                                 base_rules=self.base_rules, m=self.m, evc=self.evc,
                                 max_rule_length=self.max_rule_length, width=self.width,
                                 default_alpha=self.default_alpha, parent_alpha=self.parent_alpha,
-                                add_sub_rules=self.add_sub_rules)
+                                add_sub_rules=self.add_sub_rules, target_class=self.target_class)
             learner.evds = self.evds
             return learner(data)
 
@@ -148,15 +148,16 @@ class ABRuleLearner(RulesStar):
     def create_initial_star(self, X, Y, W, prior):
         star = []
         for cli, cls in enumerate(self.domain.class_var.values):
-            # select base rules that have class cls
-            base_cls = [r for r in self.base_rules if cli == r.target_class]
-            # add default to base
-            base_cls.append(Rule(selectors=[], domain=self.domain))
-            rules = self.rule_finder.search_strategy.initialise_rule(
-                X, Y, W, cli, base_cls, self.domain, prior, prior,
-                self.evaluator, self.rule_finder.complexity_evaluator,
-                self.rule_validator, self.rule_finder.general_validator)
-            star.extend(rules)
+            if self.target_class is None or cli == self.target_class or cls == self.target_class:
+                # select base rules that have class cls
+                base_cls = [r for r in self.base_rules if cli == r.target_class]
+                # add default to base
+                base_cls.append(Rule(selectors=[], domain=self.domain))
+                rules = self.rule_finder.search_strategy.initialise_rule(
+                    X, Y, W, cli, base_cls, self.domain, prior, prior,
+                    self.evaluator, self.rule_finder.complexity_evaluator,
+                    self.rule_validator, self.rule_finder.general_validator)
+                star.extend(rules)
         for r in star:
             r.default_rule = r
             r.do_evaluate()
