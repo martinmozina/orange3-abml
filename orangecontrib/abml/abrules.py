@@ -2,6 +2,7 @@ from warnings import warn
 import re
 import numpy as np
 import Orange
+from copy import copy
 from orangecontrib.evcrules.rules import RulesStar
 from Orange.classification.rules import Rule, Selector, _RuleClassifier, \
     Evaluator, CN2UnorderedClassifier, get_dist, LRSValidator, Validator
@@ -27,24 +28,15 @@ class ABRuleLearner(RulesStar):
 
     def __init__(self, preprocessors=None, base_rules=None, m=2, evc=True,
                  max_rule_length=5, width=100, default_alpha=1.0,
-                 parent_alpha=1.0, add_sub_rules=False):
+                 parent_alpha=1.0, add_sub_rules=False, target_instances=None):
         super().__init__(preprocessors=preprocessors,
                          base_rules=base_rules,
                          m=m, evc=evc, max_rule_length=max_rule_length,
                          width=width, default_alpha=default_alpha,
-                         parent_alpha=parent_alpha, add_sub_rules=add_sub_rules)
+                         parent_alpha=parent_alpha, add_sub_rules=add_sub_rules,
+                         target_instances=target_instances)
 
     def fit_storage(self, data):
-        if "Arguments" not in data.domain:
-            #warn("No meta attribute representing Arguments! Learning without arguments.")
-            learner = RulesStar(preprocessors=self.preprocessors,
-                                base_rules=self.base_rules, m=self.m, evc=self.evc,
-                                max_rule_length=self.max_rule_length, width=self.width,
-                                default_alpha=self.default_alpha, parent_alpha=self.parent_alpha,
-                                add_sub_rules=self.add_sub_rules, target_class=self.target_class)
-            learner.evds = self.evds
-            return learner(data)
-
         X, Y, W = data.X, data.Y, data.W if data.W else None
         Y = Y.astype(dtype=int)
 
@@ -57,6 +49,8 @@ class ABRuleLearner(RulesStar):
     def parse_args(self, data, X, Y, W):
         base_rules = []
         constraints = [None for i in range(X.shape[0])]
+        if "Arguments" not in data.domain:
+            return base_rules, constraints
         arg_index = data.domain.index("Arguments")
         metas = data.metas
         for inst, args in enumerate(metas[:, -arg_index-1]):
@@ -78,26 +72,35 @@ class ABRuleLearner(RulesStar):
                 # undefined constraints leave for now
                 selectors = []
                 unfinished = []
-                for ac in att_cons:
+                for aci, ac in enumerate(att_cons):
                     column, op, value = self.parse_constraint(ac, data, inst)
                     if column == None:
                         warn("Can not parse {}. Please check the type of attribute.".format(ac))
                         continue
-                    if value == None: # unspecified argument
-                        unfinished.append((column, op))
-                    else:
-                        selectors.append(Selector(column=column, op=op, value=value))
+                    elif isinstance(value, str) and value.startswith('?'):
+                        value = float(value[1:])
+                        unfinished.append(aci)
+                    elif isinstance(value, str):
+                        # set maximum/minimum value
+                        if op == ">=":
+                            value = np.min(data.X[column])
+                        else:
+                            value = np.max(data.X[column])
+                    selectors.append(Selector(column=column, op=op, value=value))
                 rule = Rule(selectors=selectors, domain=data.domain)
                 rule.filter_and_store(X, Y, W, Y[inst])
                 # if we have any unfinished selectors, we have to find some values for that
-                spec_rules = self.specialize(rule, unfinished, X, Y, W, inst)
+                if unfinished:
+                    spec_rules = self.specialize(rule, unfinished, X, Y, W, inst)
+                else:
+                    spec_rules = [rule]
                 for sr in spec_rules:
-                    constraints[inst].append(sr)
+                    sr.create_model()
+                    constraints[inst].append(str(sr))
                     base_rules.append(sr)
         return base_rules, np.array(constraints, dtype=object)
 
     def specialize(self, rule, unfinished_selectors, X, Y, W, instance_index):
-        us_tuple = list((sel[0], sel[1]) for sel in unfinished_selectors)
         rule.general_validator = self.rule_finder.general_validator
         self.rule_finder.search_strategy.storage = {}
         rules = [rule]
@@ -105,21 +108,36 @@ class ABRuleLearner(RulesStar):
         while star:
             new_star = []
             for rs in star:
+                rs.create_model()
                 refined = self.rule_finder.search_strategy.refine_rule(X, Y, W, rs)
                 # check each refined rule whether it is consistent with unfinished_selectors
                 for ref_rule in refined:
                     # check last selector if it is consistent with unfinished_selectors
                     sel = ref_rule.selectors[-1]
-                    if (sel.column, sel.op) in us_tuple:
-                        ref_rule.filter_and_store(X, Y, W, rule.target_class)
-                        if ref_rule.covered_examples[instance_index]:
-                            rules.append(ref_rule)
-                            new_star.append(ref_rule)
+                    for i, (old_sel) in enumerate(ref_rule.selectors[:-1]):
+                        if (old_sel.column, old_sel.op) == (sel.column, sel.op) and \
+                                        i in unfinished_selectors:
+                            # this rules is candidate for further specialization
+                            # create a copy of rule
+                            new_rule = Rule(selectors=copy(rule.selectors),
+                                             domain=rule.domain,
+                                             initial_class_dist=rule.initial_class_dist,
+                                             prior_class_dist=rule.prior_class_dist,
+                                             quality_evaluator=rule.quality_evaluator,
+                                             complexity_evaluator=rule.complexity_evaluator,
+                                             significance_validator=rule.significance_validator,
+                                             general_validator=rule.general_validator)
+                            new_rule.selectors[i] = Selector(column=sel.column, op=sel.op, value=sel.value)
+                            new_rule.filter_and_store(X, Y, W, rule.target_class)
+                            if new_rule.covered_examples[instance_index]:
+                                rules.append(new_rule)
+                                new_star.append(new_rule)
+                            break
             star = new_star
         return rules
 
     def parse_constraint(self, att_cons, data, inst):
-        sp = re.split('[(>=)(<=)<>]', att_cons)
+        sp = re.split('>=|<=', att_cons)
         if len(sp) == 1:
             neg = att_cons.startswith("~")
             if neg:
@@ -135,7 +153,7 @@ class ABRuleLearner(RulesStar):
             try:
                 val = float(sp[1])
             except:
-                val = None
+                val = str(sp[1])
             if ">" in att_cons:
                 op = ">="
             else:
@@ -160,16 +178,30 @@ class ABRuleLearner(RulesStar):
                 star.extend(rules)
         for r in star:
             r.default_rule = r
+            if r.length > 0:
+                for ind in np.nonzero(self.cons_index)[0]:
+                    r.create_model()
+                    str_r = str(r)
+                    for cri, cr in enumerate(self.constraints[ind]):
+                        if isinstance(cr, str) and str_r == cr:
+                            self.constraints[ind][cri] = r # replace string with rule
             r.do_evaluate()
+
         return star
 
     def update_best(self, bestr, bestq, rule, Y):
         indices = (rule.covered_examples) & (rule.target_class == Y) & \
                   (rule.quality-0.005 > bestq)
         # remove indices where rule is not consistent with constraints
+        if self.target_instances:
+            ind2 = np.zeros(indices.shape, dtype=bool)
+            ind2[self.target_instances] = indices[self.target_instances]
+            indices = ind2
         for ind in np.nonzero(self.cons_index & indices)[0]:
-            if rule.default_rule not in self.constraints[ind]:
-                indices[ind] = 0
+            indices[ind] = 0
+            for cn in self.constraints[ind]:
+                if rule.default_rule is cn:
+                    indices[ind] = 1
         bestr[indices] = rule
         bestq[indices] = rule.quality
 

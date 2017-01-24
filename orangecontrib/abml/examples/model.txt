@@ -1,5 +1,6 @@
 Logistic regression model
-                  (note: coeficients are learned from normalized values of attributes)Attack=no	Attack=yes	Attribute
+(note: coeficients are learned from normalized values of attributes)
+Attack=no	Attack=yes	Attribute
 -0.804(-1.34,-0.271)	0.804(0.271,1.34)	attacking_pieces
 0.0104(-0.139,0.16)	-0.0104(-0.16,0.139)	pieces_on_king_side
 -0.774(-1.5,-0.0491)	0.774(0.0491,1.5)	close_combat_pieces

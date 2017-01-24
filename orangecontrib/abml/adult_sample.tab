@@ -4,9 +4,9 @@ continuous	Private Self-emp-not-inc Self-emp-inc Federal-gov Local-gov State-gov
 49	Private	193366	HS-grad	9	Married-civ-spouse	Craft-repair	Husband	White	Male	0	0	40	United-States	<=50K	
 44	Private	128354	Masters	14	Divorced	Exec-managerial	Unmarried	White	Female	0	0	40	United-States	<=50K	
 29	Private	105598	Some-college	10	Divorced	Tech-support	Not-in-family	White	Male	0	0	58	United-States	<=50K	
-76	Private	124191	Masters	14	Married-civ-spouse	Exec-managerial	Husband	White	Male	0	0	40	United-States	>50K	{age>50}
+76	Private	124191	Masters	14	Married-civ-spouse	Exec-managerial	Husband	White	Male	0	0	40	United-States	>50K	{age>=50}
 59	Private	146013	Some-college	10	Married-civ-spouse	Sales	Husband	White	Male	4064	0	40	United-States	<=50K	
-17	Private	191260	9th	5	Never-married	Other-service	Own-child	White	Male	1055	0	24	United-States	<=50K	{age<,fnlwgt<,education-num<,hours-per-week<}
+17	Private	191260	9th	5	Never-married	Other-service	Own-child	White	Male	1055	0	24	United-States	<=50K	{age<=,fnlwgt<=,education-num<=,hours-per-week<=}
 65	Private	111095	HS-grad	9	Married-civ-spouse	Transport-moving	Husband	White	Male	0	0	16	United-States	<=50K	
 24	Private	303296	Some-college	10	Married-civ-spouse	Adm-clerical	Wife	Asian-Pac-Islander	Female	0	0	40	Laos	<=50K	
 23	?	211601	Assoc-voc	11	Never-married	?	Own-child	Black	Female	0	0	15	United-States	<=50K	

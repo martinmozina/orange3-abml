@@ -7,7 +7,7 @@ import orangecontrib.abml.argumentation as arg
 
 # settings
 optimize_penalty = False # do this only once, then set the value as fixed
-cycle = 0
+cycle = 1
 
 # create learner
 rule_learner = rules.ABRuleLearner(add_sub_rules=True)
@@ -36,14 +36,15 @@ bayes = Orange.classification.NaiveBayesLearner()
 logistic = Orange.classification.LogisticRegressionLearner()
 random_forest = Orange.classification.RandomForestLearner()
 svm = Orange.classification.SVMLearner()
+tree = Orange.classification.TreeLearner()
 cn2 = Orange.classification.rules.CN2UnorderedLearner()
-learners = [learner, logistic, bayes, cn2, random_forest, svm]
+learners = [learner, logistic, tree, bayes, cn2, random_forest, svm]
 res = TestOnTestData(data, testdata, learners)
 ca = CA(res)
 auc = AUC(res)
 ll = LogLoss(res)
 
-names = ['logrules', 'logistic', 'naive-bayes', 'cn2', 'random-forest', 'svm']
+names = ['logrules', 'logistic', 'tree', 'naive-bayes', 'cn2', 'random-forest', 'svm']
 scores = ""
 scores += "CA\tAUC\tLogLoss\tMethod\n"
 for ni, n in enumerate(names):
