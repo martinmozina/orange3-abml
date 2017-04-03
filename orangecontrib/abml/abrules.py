@@ -37,18 +37,15 @@ class ABRuleLearner(RulesStar):
                          target_instances=target_instances)
 
     def fit_storage(self, data):
-        X, Y, W = data.X, data.Y, data.W if data.W else None
-        Y = Y.astype(dtype=int)
-
         # parse arguments and set constraints
-        self.base_rules, self.constraints = self.parse_args(data, X, Y, W)
+        self.base_rules, self.constraints = self.parse_args(data)
         self.cons_index = np.equal(self.constraints, None) == False
 
         return super().fit_storage(data)
 
-    def parse_args(self, data, X, Y, W):
+    def parse_args(self, data):
         base_rules = []
-        constraints = [None for i in range(X.shape[0])]
+        constraints = [None for i in range(len(data))]
         if "Arguments" not in data.domain:
             return base_rules, constraints
         arg_index = data.domain.index("Arguments")
@@ -62,36 +59,10 @@ class ABRuleLearner(RulesStar):
             constraints[inst] = []
             args = argument_re.findall(args)
             for arg in args:
-                neg = arg.startswith("~")
-                if neg:
-                    warn('Negative arguments are not yet supported. Skipping them.')
-                    continue
-                arg = arg.strip("{}").strip()
-                att_cons = [att.strip() for att in arg.split(",")]
-                # create a rule from fixed constraints
-                # undefined constraints leave for now
-                selectors = []
-                unfinished = []
-                for aci, ac in enumerate(att_cons):
-                    column, op, value = self.parse_constraint(ac, data, inst)
-                    if column == None:
-                        warn("Can not parse {}. Please check the type of attribute.".format(ac))
-                        continue
-                    elif isinstance(value, str) and value.startswith('?'):
-                        value = float(value[1:])
-                        unfinished.append(aci)
-                    elif isinstance(value, str):
-                        # set maximum/minimum value
-                        if op == ">=":
-                            value = np.min(data.X[column])
-                        else:
-                            value = np.max(data.X[column])
-                    selectors.append(Selector(column=column, op=op, value=value))
-                rule = Rule(selectors=selectors, domain=data.domain)
-                rule.filter_and_store(X, Y, W, Y[inst])
+                rule, unfinished = ABRuleLearner.create_rule_from_argument(arg, data, inst)
                 # if we have any unfinished selectors, we have to find some values for that
                 if unfinished:
-                    spec_rules = self.specialize(rule, unfinished, X, Y, W, inst)
+                    spec_rules = self.specialize(rule, unfinished, data, inst)
                 else:
                     spec_rules = [rule]
                 for sr in spec_rules:
@@ -100,7 +71,44 @@ class ABRuleLearner(RulesStar):
                     base_rules.append(sr)
         return base_rules, np.array(constraints, dtype=object)
 
-    def specialize(self, rule, unfinished_selectors, X, Y, W, instance_index):
+    @staticmethod
+    def create_rule_from_argument(arg, data, inst):
+        X, Y, W = data.X, data.Y, data.W if data.W else None
+        Y = Y.astype(dtype=int)
+
+        neg = arg.startswith("~")
+        if neg:
+            warn('Negative arguments are not yet supported. Skipping them.')
+            return None, None
+        arg = arg.strip("{}").strip()
+        att_cons = [att.strip() for att in arg.split(",")]
+        # create a rule from fixed constraints
+        # undefined constraints leave for now
+        selectors = []
+        unfinished = []
+        for aci, ac in enumerate(att_cons):
+            column, op, value = ABRuleLearner.parse_constraint(ac, data, inst)
+            if column == None:
+                warn("Can not parse {}. Please check the type of attribute.".format(ac))
+                continue
+            elif isinstance(value, str) and value.startswith('?'):
+                value = float(value[1:])
+                unfinished.append(aci)
+            elif isinstance(value, str):
+                # set maximum/minimum value
+                if op == ">=":
+                    value = np.min(data.X[column])
+                else:
+                    value = np.max(data.X[column])
+            selectors.append(Selector(column=column, op=op, value=value))
+        rule = Rule(selectors=selectors, domain=data.domain)
+        rule.filter_and_store(X, Y, W, Y[inst])
+        return rule, unfinished
+
+    def specialize(self, rule, unfinished_selectors, data, instance_index):
+        X, Y, W = data.X, data.Y, data.W if data.W else None
+        Y = Y.astype(dtype=int)
+
         rule.general_validator = self.rule_finder.general_validator
         self.rule_finder.search_strategy.storage = {}
         rules = [rule]
@@ -136,7 +144,8 @@ class ABRuleLearner(RulesStar):
             star = new_star
         return rules
 
-    def parse_constraint(self, att_cons, data, inst):
+    @staticmethod
+    def parse_constraint(att_cons, data, inst):
         sp = re.split('>=|<=', att_cons)
         if len(sp) == 1:
             neg = att_cons.startswith("~")
@@ -186,7 +195,6 @@ class ABRuleLearner(RulesStar):
                         if isinstance(cr, str) and str_r == cr:
                             self.constraints[ind][cri] = r # replace string with rule
             r.do_evaluate()
-
         return star
 
     def update_best(self, bestr, bestq, rule, Y):
