@@ -54,12 +54,11 @@ fscores = open("scores.txt", "wt")
 fscores.write(scores)
 
 # find critical examples
-c, indices = arg.find_critical(learner, learner.rule_learner, data)
+indices, criticality, rules = arg.find_critical(learner, data)
 
-for i in range(1, 6):
-    ind = indices[-i]
-    print("Criticality: ", c[ind], "index: ", ind)
-    print(data[ind])
+for prob_i, index in enumerate(indices):
+    print("Criticality: ", criticality[prob_i], "index: ", index)
+    print(data[index])
 
 
 

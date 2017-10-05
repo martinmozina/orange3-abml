@@ -1,28 +1,31 @@
-from warnings import warn
-import re
-import numpy as np
-import Orange
-from copy import copy
-from orangecontrib.evcrules.rules import RulesStar
-from Orange.classification.rules import Rule, Selector, _RuleClassifier, \
-    Evaluator, CN2UnorderedClassifier, get_dist, LRSValidator, Validator
+""" Main ABML module with class ABRuleLearner for learning rules from
+argumented examples. """
 
-validArguments_re = re.compile(r"""[" \s]*                         # remove any special characters at the beginning
-                     ~?                                         # argument could be negative (~) or positive (without ~)
-                     {                                          # left parenthesis of the argument
-                     \s*[\w\W]+                                 # first attribute of the argument
-                     (\s*,\s*[\w\W]+)*                          # following attributes in the argument
-                     }                                          # right parenthesis of the argument
-                     (\s*,\s*~?{\s*[\w\W]+(\s*,\s*[\w\W]+)*})*  # following arguments
-                     [" \s]*                                    # remove any special characters at the end
-                     """
-                     , re.VERBOSE)
+import re
+from warnings import warn
+from copy import copy
+import numpy as np
+from orangecontrib.evcrules.rules import RulesStar
+from Orange.classification.rules import Rule, Selector
+from Orange.data import Table
+
+valid_arguments_re = re.compile(
+    r"""[" \s]*                      # remove any special characters at the beginning
+     ~?                                         # argument could be negative (~) or positive (without ~)
+     {                                          # left parenthesis of the argument
+     \s*[\w\W]+                                 # first attribute of the argument
+     (\s*,\s*[\w\W]+)*                          # following attributes in the argument
+     }                                          # right parenthesis of the argument
+     (\s*,\s*~?{\s*[\w\W]+(\s*,\s*[\w\W]+)*})*  # following arguments
+     [" \s]*                                    # remove any special characters at the end
+     """, re.VERBOSE)
 
 # splitting regular expressions
 argument_re = re.compile(r'\{[^{}]+\}')
 
 class ABRuleLearner(RulesStar):
     """
+    Argument-based rule learner.
     Requires: type string meta attribute named <code>Arguments</code>
     """
 
@@ -37,13 +40,15 @@ class ABRuleLearner(RulesStar):
                          target_instances=target_instances)
 
     def fit_storage(self, data):
-        # parse arguments and set constraints
+        """ parse arguments and set constraints. """
         self.base_rules, self.constraints = self.parse_args(data)
         self.cons_index = np.equal(self.constraints, None) == False
 
         return super().fit_storage(data)
 
     def parse_args(self, data):
+        """ This function takes care of arguments, so that argumented
+        examples are correctly parsed. """
         base_rules = []
         constraints = [None for i in range(len(data))]
         if "Arguments" not in data.domain:
@@ -53,7 +58,7 @@ class ABRuleLearner(RulesStar):
         for inst, args in enumerate(metas[:, -arg_index-1]):
             if not args:
                 continue
-            if not validArguments_re.match(args):
+            if not valid_arguments_re.match(args):
                 warn('Args "{}" do not match predefined arguments format'.format(args))
                 continue
             constraints[inst] = []
@@ -73,6 +78,7 @@ class ABRuleLearner(RulesStar):
 
     @staticmethod
     def create_rule_from_argument(arg, data, inst):
+        """ Create initial rules. """
         X, Y, W = data.X, data.Y, data.W if data.W else None
         Y = Y.astype(dtype=int)
 
@@ -88,7 +94,7 @@ class ABRuleLearner(RulesStar):
         unfinished = []
         for aci, ac in enumerate(att_cons):
             column, op, value = ABRuleLearner.parse_constraint(ac, data, inst)
-            if column == None:
+            if column is None:
                 warn("Can not parse {}. Please check the type of attribute.".format(ac))
                 continue
             elif isinstance(value, str) and value.startswith('?'):
@@ -106,6 +112,7 @@ class ABRuleLearner(RulesStar):
         return rule, unfinished
 
     def specialize(self, rule, unfinished_selectors, data, instance_index):
+        """ Specialization of rule that is consistent with arguments (unfinished selectors). """
         X, Y, W = data.X, data.Y, data.W if data.W else None
         Y = Y.astype(dtype=int)
 
@@ -116,7 +123,6 @@ class ABRuleLearner(RulesStar):
         while star:
             new_star = []
             for rs in star:
-                rs.create_model()
                 refined = self.rule_finder.search_strategy.refine_rule(X, Y, W, rs)
                 # check each refined rule whether it is consistent with unfinished_selectors
                 for ref_rule in refined:
@@ -128,14 +134,16 @@ class ABRuleLearner(RulesStar):
                             # this rules is candidate for further specialization
                             # create a copy of rule
                             new_rule = Rule(selectors=copy(rule.selectors),
-                                             domain=rule.domain,
-                                             initial_class_dist=rule.initial_class_dist,
-                                             prior_class_dist=rule.prior_class_dist,
-                                             quality_evaluator=rule.quality_evaluator,
-                                             complexity_evaluator=rule.complexity_evaluator,
-                                             significance_validator=rule.significance_validator,
-                                             general_validator=rule.general_validator)
-                            new_rule.selectors[i] = Selector(column=sel.column, op=sel.op, value=sel.value)
+                                            domain=rule.domain,
+                                            initial_class_dist=rule.initial_class_dist,
+                                            prior_class_dist=rule.prior_class_dist,
+                                            quality_evaluator=rule.quality_evaluator,
+                                            complexity_evaluator=rule.complexity_evaluator,
+                                            significance_validator=rule.significance_validator,
+                                            general_validator=rule.general_validator)
+                            new_rule.selectors[i] = Selector(column=sel.column,
+                                                             op=sel.op,
+                                                             value=sel.value)
                             new_rule.filter_and_store(X, Y, W, rule.target_class)
                             if new_rule.covered_examples[instance_index]:
                                 rules.append(new_rule)
@@ -146,6 +154,7 @@ class ABRuleLearner(RulesStar):
 
     @staticmethod
     def parse_constraint(att_cons, data, inst):
+        """ Parsing conditions in arguments. """
         sp = re.split('>=|<=', att_cons)
         if len(sp) == 1:
             neg = att_cons.startswith("~")
@@ -173,6 +182,7 @@ class ABRuleLearner(RulesStar):
             return att_col, op, val
 
     def create_initial_star(self, X, Y, W, prior):
+        """ Initial star in ABML contains all positive arguments. """
         star = []
         for cli, cls in enumerate(self.domain.class_var.values):
             if self.target_class is None or cli == self.target_class or cls == self.target_class:
@@ -198,6 +208,7 @@ class ABRuleLearner(RulesStar):
         return star
 
     def update_best(self, bestr, bestq, rule, Y):
+        """ Update best rules (a rules can be best only if it is consistent with arguments). """
         indices = (rule.covered_examples) & (rule.target_class == Y) & \
                   (rule.quality-0.005 > bestq)
         # remove indices where rule is not consistent with constraints
@@ -216,14 +227,13 @@ class ABRuleLearner(RulesStar):
 
 if __name__ == '__main__':
     import pickle
-    data = Orange.data.Table('adult_sample')
+    learning_data = Table('adult_sample')
     learner = ABRuleLearner()
-    learner.evds = pickle.load(open("adult_evds.pickle", "rb"))
+    learner.evds = pickle.load(open("data/adult_evds.pickle", "rb"))
     #learner.calculate_evds(data)
-    pickle.dump(learner.evds, open("adult_evds.pickle", "wb"))
-    classifier = learner(data)
+    pickle.dump(learner.evds, open("data/adult_evds.pickle", "wb"))
+    classifier = learner(learning_data)
 
-    for rule in classifier.rule_list:
-        print(rule.curr_class_dist.tolist(), rule, rule.quality)
+    for rl in classifier.rule_list:
+        print(rl.curr_class_dist.tolist(), rl, rl.quality)
     print()
-
